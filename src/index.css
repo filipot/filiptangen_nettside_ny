@@ -13,6 +13,95 @@ body {
   /*Hides scrollbar and makes it non scrollable*/
   overflow: hidden;
 }
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.shadow_test{
+  box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+  /*-webkit-transform: translateX(-8px) translateY(8px);
+  transform: translateX(-8px) translateY(8px);*/
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.shadow_test_2{
+  filter:drop-shadow(1px -2px #3e3e3e) drop-shadow(2px -3px #3e3e3e) /*drop-shadow(3px -4px #3e3e3e)*/;
+
+  /*
+  box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;*/
+  /*-webkit-transform: translateX(-8px) translateY(8px);
+  transform: translateX(-8px) translateY(8px);*/
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.chevron {
+  position: relative;
+  text-align: center;
+
+  margin-bottom: 3px;
+  height: 7px;
+  width: 20px;
+}
+.chevron:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  background: white;
+  transform: skew(0deg, 40deg);
+}
+.chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: white;
+  transform: skew(0deg, -40deg);
+}
+
+.bottom {
+  position: fixed;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {/*
+  float:left;*/
+
+  /*
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;*/
+  /*whatever width you want*/
+}
 
 .center_content_parent{
 /*
@@ -23,10 +112,12 @@ body {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;*/
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
 
 }
+
+
 .center_content{
   transform: translateX(-50%) translateY(-50%);/*
   position: relative;

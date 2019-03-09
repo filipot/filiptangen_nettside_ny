@@ -1,0 +1,43 @@
+ul{
+    list-style-type:none;
+    padding-left:0;
+
+}
+li{
+    padding-top:2px;
+    padding-bottom:2px;
+}
+ul > li > div{
+    padding-left: 40px;
+
+}
+ul > li > div > ul  > li{
+}
+
+
+/*li{
+    padding:0 !important;
+    margin:0 !important;
+    float:left;
+
+}
+ul{
+    padding:0 !important;
+    margin:0 !important;
+    list-style-type:none;
+    width:auto;
+
+}
+
+button{
+    margin:0 !important;
+}
+
+ul > li > ul {
+    display:inline-flex;
+    float:none!important;
+
+}
+ul > li > ul > li{
+    float:none!important;
+}*/
