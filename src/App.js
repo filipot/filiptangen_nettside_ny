@@ -1,28 +1,32 @@
+import { Route } from 'react-router-dom';
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import FrontPage from './pages/FrontPage'
+import Kunnskap from './pages/Kunnskap'
+import Erfaring from './pages/Erfaring'
+import Personlighet from './pages/Personlighet'
+import Ekstra from './pages/Ekstra'
+import PageShell from './pages/PageShell'
 import './App.css';
+import { HashRoute } from 'react-router-dom'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+        <div className="App" >
+            <Route path="/" exact component={FrontPage}></Route>
+            <Route path="/kunnskap" exact component={Kunnskap}></Route>
+            <Route path="/erfaring" exact component={Erfaring}></Route>
+            <Route path="/personlighet" exact component={Personlighet}></Route>
+            <Route path="/ekstra" exact component={Ekstra}></Route>
+
+        </div>
     );
   }
 }
+/*
+<!--
+            <HashRoute path="/" exact component={FrontPage}></HashRoute>
+            <HashRoute path="/thanks" exact component={Kunnskap}></HashRoute>-->
+*/
 
 export default App;
