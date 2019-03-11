@@ -4,8 +4,13 @@ import Button from 'react-bootstrap/Button';
 class RedirectButton extends Component {
 
     redirect = () =>{
-        this.props.destroy();
+        let nowpath = this.props.location.pathname;
         let path = this.props.path;
+        if(nowpath === path){
+            return;
+        }
+        this.props.destroy();
+
         let timeout = this.props.timeout;
 
         setTimeout(() => {
@@ -15,8 +20,9 @@ class RedirectButton extends Component {
     };
     render() {
         return(
-            <Button onClick={() => { this.redirect()}}>
-                {this.props.name}
+            <Button onClick={() => { this.redirect()}} style={{width:"100px", height:"80px"}}>
+                {this.props.src}<p>
+                {this.props.name}</p>
             </Button>
         )
     }

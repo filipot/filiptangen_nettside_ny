@@ -19,6 +19,14 @@ body {
   clear: both;
 }
 
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 .shadow_test{
   box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
   /*-webkit-transform: translateX(-8px) translateY(8px);
@@ -30,7 +38,7 @@ body {
 }
 
 .shadow_test_2{
-  filter:drop-shadow(1px -2px #3e3e3e) drop-shadow(2px -3px #3e3e3e) /*drop-shadow(3px -4px #3e3e3e)*/;
+  filter:drop-shadow(1px -2px #3e3e3e) /*drop-shadow(2px -3px #3e3e3e) drop-shadow(3px -4px #3e3e3e)*/;
 
   /*
   box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;*/
@@ -47,7 +55,7 @@ body {
   text-align: center;
 
   margin-bottom: 3px;
-  height: 7px;
+  height: 2px;
   width: 20px;
 }
 .chevron:before {

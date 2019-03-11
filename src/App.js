@@ -8,11 +8,14 @@ import Ekstra from './pages/Ekstra'
 import PageShell from './pages/PageShell'
 import './App.css';
 import { HashRoute } from 'react-router-dom'
+import {withRouter} from 'react-router-dom';
 
 class App extends Component {
+
+
   render() {
     return (
-        <div className="App" >
+        <div className="App">
             <Route path="/" exact component={FrontPage}></Route>
             <Route path="/kunnskap" exact component={Kunnskap}></Route>
             <Route path="/erfaring" exact component={Erfaring}></Route>

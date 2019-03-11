@@ -99,7 +99,7 @@ class Kunnskap extends Component {
     render() {
         return(
             <div>
-                <Layout timeout ={600} destroy={()=>this.setState({show:false})}/>
+
                     <CSSTransitionGroup
                         transitionAppear={true}
                         transitionLeave={true}
@@ -109,41 +109,171 @@ class Kunnskap extends Component {
                         transitionName="SlideIn"
                     >
                         {this.state.show ?
-                            <div key="1" >
-                                <h2 key="2">We don't mind keeping you posted!</h2>
-                                <p key="3">THE OTHER WEBSITE!
-                                </p>
+                            <div className="container">
+                            <div className="card-columns">
 
-                                <RedirectButton name="test" destroy={()=>this.setState({show:false})} path='/' timeout={300}>Test</RedirectButton>
+                                <div className="card">
+                                    <div className="card-header">
+                                        Card Header
+                                    </div>
+                                    <img className="card-img-top" src="https://source.unsplash.com/daily" alt="Card image top"/>
+                                        <div className="card-body">
+                                            <h3 className="card-title">Each Card body can have a title</h3>
+                                            <h4 className="card-subtitle">And a subtitle</h4>
+                                            <p className="card-text">This is a card body 1</p>
+                                        </div>
 
 
-
-                                <p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p>
-                                <p>tggggg</p>
-
-                                <p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p>
-                                <p>tggggg</p>
-
-                                <p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p>
-                                <p>tggggg</p>
-                                <div id="test">
-                                    <p> THIS IS THE TEST</p>
+                                        <div className="card-body">
+                                            <h3 className="card-title">Card body 2 title</h3>
+                                            <h4 className="card-subtitle">And subtitle</h4>
+                                            <p className="card-text">You can also add a second body or even more</p>
+                                        </div>
+                                        <img className="card-img-bottom" src="https://source.unsplash.com/daily" alt="Card image bottom"/>
+                                            <div className="card-footer">
+                                                Card Footer
+                                            </div>
                                 </div>
 
-                                <p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p>
-                                <p>tggggg</p>
 
-                                <p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p>
-                                <p>tggggg</p>
+                                <div className="card">
 
-                                <p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p><p>tggggg</p>
-                                <p>tggggg</p>
+                                    <img className="card-img-top" src="https://source.unsplash.com/daily?nature"
+                                         alt="Card image top"/>
+                                        <div className="card-img-overlay">
+                                            <h3 className="card-title">Card title</h3>
+                                            <h4 className="card-subtitle">Card subtitle</h4>
+                                            <p className="card-text">You can use the cap image as an overlay for the
+                                                body</p>
+                                        </div>
+                                </div>
+
+                                <div className="card">
+
+                                    <img className="card-img-top" src="https://source.unsplash.com/daily?rock"
+                                         alt="Card image top"/>
+                                        <div className="card-img-overlay white">
+                                            <h3 className="card-title">Card title</h3>
+                                            <h4 className="card-subtitle">Card subtitle</h4>
+                                            <p className="card-text">You can add links to card body</p>
+                                            <a href="#" className="card-link">Link 1</a>
+                                            <a href="#" className="card-link">Link 2</a>
+                                        </div>
+                                </div>
+
+                                <div className="card  card-primary p-3 text-center">
+                                    <ul className="list-group">
+                                        <li className="list-group-item">Item 1</li>
+                                        <li className="list-group-item">Item 2</li>
+                                        <li className="list-group-item">Item 3</li>
+                                    </ul>
+
+                                </div>
+
+                                <div className="card text-white border-danger bg-danger p-1 text-center">
+
+                                    <div className="card-body">
+                                        <h2 className="card-title"> My Card</h2>
+                                        <p className="card-text"> This is a simple centered text </p>
+                                    </div>
+
+                                </div>
+
+                                <div className="card text-primary border-primary">
+
+                                    <div className="card-body">
+                                        <h2 className="card-title"> My List</h2>
+                                        <ul className="list-group list-group-flush">
+                                            <li className="list-group-item">Item 1</li>
+                                            <li className="list-group-item">Item 2</li>
+                                            <li className="list-group-item">Item 3</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                                <div className="card border-danger text-primary">
+                                    <img className="card-img-top" src="https://source.unsplash.com/daily?rock"
+                                         alt="Card image cap"/>
+                                        <div className="card-body">
+                                            <h5 className="card-title">Card title</h5>
+                                            <p className="card-text">Card text</p>
+                                        </div>
+                                        <ul className="list-group list-group-flush">
+                                            <li className="list-group-item">Item 1</li>
+                                            <li className="list-group-item">Item 2</li>
+                                            <li className="list-group-item">Item 3</li>
+                                        </ul>
+                                        <div className="card-body">
+                                            <a href="#" className="card-link">Link 1</a>
+                                            <a href="#" className="card-link">Link 2</a>
+                                        </div>
+                                </div>
+
+                                <div className="card">
+                                    <div className="card-header">
+                                        <ul className="nav nav-tabs card-header-tabs">
+                                            <li className="nav-item">
+                                                <a className="nav-link active" href="#">Tab 1</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Tab 2</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Tab 3</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img className="card-img-top" src="https://source.unsplash.com/daily?rock"
+                                         alt="Card image top"/>
+                                        <div className="card-body">
+                                            <h3 className="card-title">Card title</h3>
+                                            <h4 className="card-subtitle">Card subtitle</h4>
+                                            <p className="card-text">You can add navigation (navigation and pills) to
+                                                card header</p>
+                                        </div>
+                                </div>
+
+                                <div className="card">
+                                    <div className="card-header">
+                                        <ul className="nav  nav-pills card-header-pill">
+                                            <li className="nav-item">
+                                                <a className="nav-link active" href="#">Pill 1</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Pill 2</a>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#">Pill 3</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img className="card-img-top" src="https://source.unsplash.com/daily?wood"
+                                         alt="Card image top"/>
+                                        <div className="card-body">
+                                            <h3 className="card-title">Card title</h3>
+                                            <h4 className="card-subtitle">Card subtitle</h4>
+                                            <p className="card-text">You can add navigation (navigation and pills) to
+                                                card header</p>
+                                        </div>
+                                </div>
+
+                                <div className="card text-white bg-dark mt-5">
+                                    <div className="card-header">This is a Header</div>
+                                    <div className="card-body">
+                                        <h5 className="card-title">Card title</h5>
+                                        <p className="card-text">This is a text </p>
+                                    </div>
+                                </div>
 
                             </div>
+
+                        </div>
                             :
                             <div></div>
                         }
                     </CSSTransitionGroup>
+                <Layout timeout ={600} destroy={()=>this.setState({show:false})}/>
             </div>
         )
     }
