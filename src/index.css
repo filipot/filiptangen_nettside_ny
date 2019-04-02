@@ -6,12 +6,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /*background-color:lightblue;*/
+  background-image: linear-gradient(to right, #AAAAAA , #EAEFED );
+  /*
   background-image: url("./background2.png");
   background-repeat: repeat;
   background-size: 500px 500px;
-  background-position: -150px -150px;
+  background-position: -150px -150px;*/
   /*Hides scrollbar and makes it non scrollable*/
-  overflow: hidden;
+  overflow: hidden!important;
+    height:100%;
 }
 .container:after {
   content: "";
@@ -120,7 +124,7 @@ body {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;*/
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
 
 }
@@ -173,6 +177,7 @@ code {
     -webkit-transform: translateY(1000px);
     transform: translateY(1000px);
     opacity: 0;
+    transform: translateZ(0);
   }
   100% {
     -webkit-transform: translateY(0);
@@ -185,6 +190,7 @@ code {
     -webkit-transform: translateY(1000px);
     transform: translateY(1000px);
     opacity: 0;
+    transform: translateZ(0);
   }
   100% {
     -webkit-transform: translateY(0);
@@ -210,6 +216,7 @@ code {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
+    transform: translateZ(0);
   }
   100% {
     -webkit-transform: translateY(-1000px);
@@ -228,6 +235,7 @@ code {
   -moz-transform: translateX(-30px);
   -o-transform: translateX(-30px);
   -ms-transform: translateX(-30px);
+  transform: translateZ(0);
   opacity: 0;
 }
 
@@ -238,6 +246,7 @@ code {
   -moz-transform: translateX(0);
   -o-transform: translateX(0);
   -ms-transform: translateX(0);
+  transform: translateZ(0);
   transition: all 1.0s linear;
 }
 .SlideOut-enter {

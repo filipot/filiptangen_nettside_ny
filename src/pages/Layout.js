@@ -13,7 +13,7 @@ import {withRouter} from 'react-router-dom';
 import  "../styles/layout.css";
 
 import icon1 from '../images/icons8-contacts.svg'; // Tell Webpack this JS file uses this image
-import icon2 from '../images/icons8-books-64.png'; // Tell Webpack this JS file uses this image
+import icon2 from '../images/bilde.png'; // Tell Webpack this JS file uses this image
 import icon3 from '../images/icons8-work-96.png'; // Tell Webpack this JS file uses this image
 
 
@@ -22,6 +22,7 @@ class Layout extends Component {
     componentDidMount() {/*
         document.onwheel = this.onWheel.bind(this);*/
         window.addEventListener("wheel", this.onWheel/*event => console.info(event.deltaY)*/);
+
     }
     componentWillUnmount(){
         window.removeEventListener("wheel",this.onWheel);
@@ -39,6 +40,8 @@ class Layout extends Component {
 
     getPreviousPage() {
         let path = this.props.location.pathname;
+
+
         if(path === "/")
             return;
         switch(path){
@@ -77,9 +80,25 @@ class Layout extends Component {
         this.redirect(path);
 
     }
+/*
+    func = (event) =>{
+        window.can_switch_page=true;
 
-    onWheel = (event) =>{
-        if (event.deltaY/*event.nativeEvent.wheelDelta */< 0) {
+
+    }*/
+
+    onWheel = (event) =>{/*
+        if(!window.can_switch_page){
+            if(window.timer_test !== null) {
+                clearTimeout(window.timer_test);
+            }
+            window.timer_test = setTimeout( ()=>this.func(event), 100);
+            return;
+
+        }
+        window.can_switch_page = false;*/
+
+        if (event.deltaY< 0) {
                 this.getPreviousPage();
 
         } else {
