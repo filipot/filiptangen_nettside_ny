@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /*background-color:lightblue;*/
-  background-image: linear-gradient(to right, #AAAAAA , #EAEFED );
+  background-image: linear-gradient(to right, #EEEEEE , #EAEFED );
   /*
   background-image: url("./background2.png");
   background-repeat: repeat;
@@ -17,6 +17,8 @@ body {
   overflow: hidden!important;
     height:100%;
 }
+
+
 .container:after {
   content: "";
   display: table;
@@ -30,6 +32,16 @@ body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
+
+.card-border{
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color:gray;
+
+
+}
+
 
 .shadow_test{
   box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
@@ -158,6 +170,7 @@ code {
 
 
 .SlideIn-appear {
+  will-change:transform;
 
   animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
@@ -166,9 +179,11 @@ code {
 
 
 .SlideIn-leave {
+  will-change:transform;
   animation: slide-out-top 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 .SlideIn-leave-active {
+  will-change:transform;
   animation: slide-out-top 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
@@ -177,7 +192,7 @@ code {
     -webkit-transform: translateY(1000px);
     transform: translateY(1000px);
     opacity: 0;
-    transform: translateZ(0);
+  @extend .transformZ;
   }
   100% {
     -webkit-transform: translateY(0);
@@ -190,7 +205,7 @@ code {
     -webkit-transform: translateY(1000px);
     transform: translateY(1000px);
     opacity: 0;
-    transform: translateZ(0);
+  @extend .transformZ;
   }
   100% {
     -webkit-transform: translateY(0);
@@ -216,7 +231,7 @@ code {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
-    transform: translateZ(0);
+    @extend .transformZ;
   }
   100% {
     -webkit-transform: translateY(-1000px);
@@ -235,7 +250,7 @@ code {
   -moz-transform: translateX(-30px);
   -o-transform: translateX(-30px);
   -ms-transform: translateX(-30px);
-  transform: translateZ(0);
+  @extend .transformZ;
   opacity: 0;
 }
 
@@ -246,10 +261,11 @@ code {
   -moz-transform: translateX(0);
   -o-transform: translateX(0);
   -ms-transform: translateX(0);
-  transform: translateZ(0);
+
   transition: all 1.0s linear;
 }
 .SlideOut-enter {
+@extend .transformZ;
   opacity: 0;
   transform: translateX(-30px);
   -webkit-transform: translateX(-30px);
@@ -257,16 +273,29 @@ code {
   -o-transform: translateX(-30px);
   -ms-transform: translateX(-30px);
 }
+
+.transformZ {
+  backface-visibility: hidden;
+  perspective: 1000;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
 .SlideOut-enter.SlideOut-enter-active {
+  @extend .transformZ;
   opacity: 1;
   transform: translateX(0);
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -o-transform: translateX(0);
   -ms-transform: translateX(0);
+
   transition: all 1.0s linear;
 }
 .SlideOut-leave {
+@extend .transformZ;
   opacity: 1.0;
   transform: translateX(0);
   -webkit-transform: translateX(0);
@@ -275,6 +304,7 @@ code {
   -ms-transform: translateX(0);
 }
 .SlideOut-leave.SlideOut-leave-active {
+@extend .transformZ;
   opacity: 0;
   position: absolute;
   width: 100%;

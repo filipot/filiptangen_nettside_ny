@@ -1,21 +1,39 @@
 
+.transformZ {
+    backface-visibility: hidden;
+    perspective: 1000;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
 .fadeIn-appear {
+@extend .transformZ;
+    position:fixed;
 
     animation: fade-in 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
 }
 
 .fadeIn-leave {
+@extend .transformZ;
+
     animation: slide-out-top 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 .fadeIn-leave-active {
+@extend .transformZ;
+
     animation: slide-out-top 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 @-webkit-keyframes fade-in {
     0% {
-        opacity: 0;
-        transform: scale(0.2);/*
+        will-change:transform;
+        opacity: 1;
+        transform: scale(0.2) translateZ(0);
+        /*
         transform:translate(+25%, +25%);*/
     }
     90% {

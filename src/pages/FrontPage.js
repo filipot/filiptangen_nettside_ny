@@ -1,5 +1,5 @@
 // ./src/pages/FrontPage.js
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Button from 'react-bootstrap/Button';
 
 import Card from 'react-bootstrap/Card';
@@ -16,15 +16,15 @@ import '../styles/fadeInSlideOut.css'
 
 import RedirectButton from './RedirectButton';
 
-import { CSSTransitionGroup } from 'react-transition-group'
+import {CSSTransitionGroup} from 'react-transition-group'
 import Layout from "./Layout";
 
 class FrontPage extends Component {
-    state={
-        show:true,
+    state = {
+        show: true,
 
     };
-    toTest = () =>{
+    toTest = () => {
         this.props.history.push("/kunnskap");
     };
     /*
@@ -34,8 +34,15 @@ className="shadow_test" style={{margin:"20px", width:'100%', height:'70%', minHe
 
 <img variant="top" src={bilde} className="" style={{width:"100%",height:"100%", padding:"20px"}} />
     */
+
+
+    /*BILDE
+    *   <img variant="top" src={bilde} className="" style={{width:"100%",height:"100%", padding:"20px"}} />
+
+    *
+    * */
     render() {
-        return(
+        return (
             <div>
 
                 <CSSTransitionGroup
@@ -46,73 +53,71 @@ className="shadow_test" style={{margin:"20px", width:'100%', height:'70%', minHe
                     transitionEnterTimeout={400}
                     transitionLeaveTimeout={300}
                     transitionName="fadeIn"
-                    >
+                >
                     {this.state.show ?
 
 
+                        <div key="1" className="center_content_parent" style={{width: "70vw", height: "35vw"}}>
+                            <div className="center_content" style={{width: '100%', height: '100%'}}>
+                                <Row style={{height: '100%'}}>
+                                    <Col sm={4} style={{height: "100%"}}>
+                                        <Card className="shadow-sm card-border" >
+
+                                            <Container style={{maxWidth: "max-content", height: '100%'}}>
+                                                <Card.Body>
+
+                                                    <Card.Title><h2>Filip Tangen</h2></Card.Title>
+                                                    <Card.Text>
+                                                        Linkedin
+                                                    </Card.Text>
+                                                </Card.Body>
+                                            </Container>
 
 
-                    <div key="1"  className = "center_content_parent"  style={{width:"70vw",height:"35vw"}} >
-                        <Card  className = "center_content shadow" style={{ width: '100%', height: '100%'}}>
 
-                            <Container style={{maxWidth: "max-content", height:'100%'}} >
-                                <Row style={{height:'100%'}}>
+                                        </Card>
 
+
+                                    </Col>
+                                    <Col sm={0.5}>
+
+
+
+
+                                    </Col>
 
                                     <Col sm={7}>
 
-                                        <Card.Body>
+                                        <Card className=" shadow-sm card-border">
 
-                                            <Card.Title>Hello!</Card.Title>
-                                            <Card.Text>
-                                                Jeg ønsker meg en jobb
-                                            </Card.Text>
-                                        </Card.Body>
+                                            <Container style={{maxWidth: "max-content", height: '100%'}}>
+                                                <Card.Body>
 
-                                    </Col>
-                                    <Col sm={1}>
-
-                                        <div className="vertical-center"style={{  borderLeft: "1px solid gray",
-                                            height: "95%"}}></div>
+                                                    <Card.Title>Hello!</Card.Title>
+                                                    <Card.Text>
+                                                        Jeg ønsker meg en jobb
+                                                    </Card.Text>
+                                                </Card.Body>
+                                            </Container>
 
 
-                                    </Col>
-                                    <Col sm={4} style={{height:"100%"}}>
-                                        <div>
-                                            <img variant="top" src={bilde} className="" style={{width:"100%",height:"100%", padding:"20px"}} />
-
-
-                                            <div >
-
-                                                <h3>Filip Tangen</h3>
-
-
-                                                <p>Linkedin</p>
-
-                                            </div>
-                                        </div>
-
-
+                                        </Card>
 
 
                                     </Col>
+
+
                                 </Row>
-                            </Container>
+
+                            </div>
 
 
-
-
-
-                        </Card>
-
-
-
-                    </div>
-                    :
+                        </div>
+                        :
                         <div></div>
                     }
                 </CSSTransitionGroup>
-                <Layout timeout ={400} destroy={()=>this.setState({show:false})}/>
+                <Layout timeout={400} destroy={() => this.setState({show: false})}/>
             </div>
 
         )
@@ -126,15 +131,15 @@ className="shadow_test" style={{margin:"20px", width:'100%', height:'70%', minHe
                                                 <svg viewBox="0 0 250 50">
                                                     <symbol id="s-text">
                                                         <text textAnchor="middle"
-                                                              x="20%"
-                                                              y="70%"
+                                                              x2="20%"
+                                                              y2="70%"
                                                               className="text--line"
                                                         >
                                                             Filip
                                                         </text>
                                                         <text textAnchor="middle"
-                                                              x="70%"
-                                                              y="70%"
+                                                              x2="70%"
+                                                              y2="70%"
                                                               className="text--line2"
                                                         >
                                                             Tangen
@@ -189,15 +194,15 @@ className="shadow_test" style={{margin:"20px", width:'100%', height:'70%', minHe
                                                 <svg viewBox="0 0 250 50">
                                                     <symbol id="s-text">
                                                         <text textAnchor="middle"
-                                                              x="20%"
-                                                              y="70%"
+                                                              x2="20%"
+                                                              y2="70%"
                                                               className="text--line"
                                                         >
                                                             Filip
                                                         </text>
                                                         <text textAnchor="middle"
-                                                              x="70%"
-                                                              y="70%"
+                                                              x2="70%"
+                                                              y2="70%"
                                                               className="text--line2"
                                                         >
                                                             Tangen

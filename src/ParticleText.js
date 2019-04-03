@@ -18,8 +18,8 @@ var utils = {
     },
 
     distance: function (p0, p1) {
-        var dx = p1.x - p0.x,
-            dy = p1.y - p0.y;
+        var dx = p1.x2 - p0.x2,
+            dy = p1.y2 - p0.y2;
         return Math.sqrt(dx * dx + dy * dy);
     },
 
@@ -34,12 +34,12 @@ var utils = {
     },
 
     circlePointCollision: function (x, y, circle) {
-        return utils.distanceXY(x, y, circle.x, circle.y) < circle.radius;
+        return utils.distanceXY(x, y, circle.x2, circle.y2) < circle.radius;
     },
 
     pointInRect: function (x, y, rect) {
-        return utils.inRange(x, rect.x, rect.x + rect.radius) &&
-            utils.inRange(y, rect.y, rect.y + rect.radius);
+        return utils.inRange(x, rect.x2, rect.x2 + rect.radius) &&
+            utils.inRange(y, rect.y2, rect.y2 + rect.radius);
     },
 
     inRange: function (value, min, max) {
@@ -52,8 +52,8 @@ var utils = {
     },
 
     rectIntersect: function (r0, r1) {
-        return utils.rangeIntersect(r0.x, r0.x + r0.width, r1.x, r1.x + r1.width) &&
-            utils.rangeIntersect(r0.y, r0.y + r0.height, r1.y, r1.y + r1.height);
+        return utils.rangeIntersect(r0.x2, r0.x2 + r0.width, r1.x2, r1.x2 + r1.width) &&
+            utils.rangeIntersect(r0.y2, r0.y2 + r0.height, r1.y2, r1.y2 + r1.height);
     },
 
     degreesToRads: function (degrees) {
@@ -73,11 +73,11 @@ var utils = {
     },
 
     getmiddle: function (p0, p1) {
-        var x = p0.x,
-            x2 = p1.x;
+        var x = p0.x2,
+            x2 = p1.x2;
         let middlex = (x + x2) / 2;
-        var y = p0.y,
-            y2 = p1.y;
+        var y = p0.y2,
+            y2 = p1.y2;
         let middley = (y + y2) / 2;
         let pos = [middlex, middley];
 
@@ -85,8 +85,8 @@ var utils = {
     },
 
     getAngle: function (p0, p1) {
-        var deltaX = p1.x - p0.x;
-        var deltaY = p1.y - p0.y;
+        var deltaX = p1.x2 - p0.x2;
+        var deltaY = p1.y2 - p0.y2;
         var rad = Math.atan2(deltaY, deltaX);
         return rad;
     },
@@ -103,12 +103,14 @@ var utils = {
 // basic setup  :)
 export function renderText() {
     let canvas = document.getElementById("canvas");
+    if(canvas === null){
+        return;
+    }
     var ctx = canvas.getContext('2d');
     var W = canvas.width = 970/*window.innerWidth*/ ;
     var H = canvas.height = 1007/*window.innerHeight*/ / 6;
 
     let gridX = 20;
-
     let gridY = 20;
     function shape(x, y, texte) {
         this.x = x;
@@ -148,17 +150,6 @@ export function renderText() {
         ];
 
 
-        buffer32[(4*gridX) * W + (9*gridY)] = false;
-        buffer32[(4*gridX) * W + (13*gridY)] = false;
-
-        buffer32[(6*gridX) * W + (26*gridY)] = false;
-        buffer32[(7*gridX) * W + (34*gridY)] = true;
-
-        buffer32[(5*gridX) * W + (38*gridY)] = false;
-
-        buffer32[(5*gridX) * W + (40*gridY)] = false;
-
-        buffer32[(5*gridX) * W + (38*gridY)] = false;
         let string = "";
         for (var y = 0; y < data.length; y += 1/*gridY*/) {
             for (var x = 0; x < data[y].length; x += 1/*gridX*/) {
@@ -167,9 +158,9 @@ export function renderText() {
                     this.placement.push(new particle(x * gridX, y * gridY));
                 }
 /*
-                if (buffer32[y * W + x]) {
+                if (buffer32[y2 * W + x2]) {
                     string += "1";
-                    this.placement.push(new particle(x, y));
+                    this.placement.push(new particle(x2, y2));
                 }
                 else{
                     string += "0"
@@ -185,11 +176,13 @@ export function renderText() {
     }
     let colors = [
 
-
-        '#f44336',/* '#e91e63', '#9c27b0', '#673ab7', '#3f51b5',
+        '#000000'
+        /*'#f44336', '#e91e63', '#9c27b0', '#673ab7', '#3f51b5',
         '#2196f3', '#03a9f4', '#00bcd4', '#009688', '#4CAF50',
-        '#8BC34A', '#CDDC39', '#FFEB3B', */ '#FFC107','#FF9800',
-        '#FF5722'
+        '#8BC34A', '#CDDC39', '#FFEB3B', */
+
+        /*'#FFC107','#FF9800',
+        '#FF5722'*/
     ];
 
     function particle(x, y, type) {
@@ -200,6 +193,8 @@ export function renderText() {
         this.rebond = utils.randomInt(1, 5);
         this.x = x;
         this.y = y;
+
+
 
         this.dying = false;
 
@@ -233,7 +228,7 @@ export function renderText() {
         };
 
         this.angleTo = function (p2) {
-            return Math.atan2(p2.y - this.y, p2.x - this.x);
+            return Math.atan2(p2.y2 - this.y2, p2.x2 - this.x2);
 
         };
 
@@ -266,7 +261,7 @@ export function renderText() {
             ctx.fill();
             ctx.closePath();
 
-            if (this.y < 0 || this.radius < minradius) {
+            if (this.y2 < 0 || this.radius < minradius) {
                 this.x = this.base[0];
                 this.dying = false;
                 this.y = this.base[1];
@@ -325,7 +320,7 @@ export function renderText() {
         radius = parseFloat(element6.value);
     }*/
 
-    var fps = 5;
+    var fps = 8;
 
     function update() {
         setTimeout(function () {

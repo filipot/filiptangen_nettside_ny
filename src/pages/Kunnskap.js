@@ -31,15 +31,15 @@ import Layout from "./Layout";
                                             <svg viewBox="0 0 300 200">
                                                 <symbol id="s-text">
                                                     <text textAnchor="middle"
-                                                          x="20%"
-                                                          y="25%"
+                                                          x2="20%"
+                                                          y2="25%"
                                                           className="text--line"
                                                     >
                                                         Filip
                                                     </text>
                                                     <text textAnchor="middle"
-                                                          x="60%"
-                                                          y="25%"
+                                                          x2="60%"
+                                                          y2="25%"
                                                           className="text--line2"
                                                     >
                                                         Tangen
@@ -107,10 +107,13 @@ class Kunnskap extends Component {
                         transitionEnterTimeout={0}
                         transitionLeaveTimeout={300}
                         transitionName="SlideIn"
+                        style={{position:"fixed", left:"50%", transform:"translateX(-50%)"}}
                     >
                         {this.state.show ?
-                            <div className="container">
-                            <div className="card-columns">
+                            <div className="container" >
+
+                                <div className="card-columns">
+
 
                                 <div className="card">
                                     <div className="card-header">

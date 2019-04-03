@@ -1,4 +1,4 @@
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import React, { Component } from 'react';
 import FrontPage from './pages/FrontPage'
 import Kunnskap from './pages/Kunnskap'
@@ -13,13 +13,10 @@ import * as ParticleText from './ParticleText'
 import {withRouter} from 'react-router-dom';
 import f from './images/envelope.svg'
 import svg from './images/envelope.svg'
-
+import TextSpasm from './TextSpasm.js'
+import filiptangen from './pages/filiptangen.js'
 class App extends Component {
     componentDidMount() {
-        window.canScroll = false;
-        window.timer_test = null;
-        window.can_switch_page = false;
-        ParticleText.renderText();
     }
 
     /*params={{
@@ -207,11 +204,6 @@ class App extends Component {
                            }
                        }} />
 
-            COLORS
-            "value": ["#BD10E0","#B8E986","#50E3C2","#FFD300","#E86363"]*/
-    render() {
-    return (
-        <div className="App" style={{width:"100vw",height:"100vh"}}>
             <Particles style={{"position":"fixed", left:"0px", right:"0px"}}
                 params={{
                     "particles": {
@@ -222,7 +214,7 @@ class App extends Component {
                                 "value_area": 200
                             }
                         },
-                        "line_linked": {
+                "line_linked": {
                             "enable": true,
                             "opacity": 0.4,
                             "color": "#0000FF"
@@ -261,15 +253,39 @@ class App extends Component {
                     "retina_detect": true
                 }} />
 
+                 <TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/>
 
-            <canvas id="canvas" style={{left:"", top:"-20px", width:"200px", height:"", translate:"transformX(-50%)"}}></canvas>
+            <TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/>
+
+            <TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/>
+
+            <TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/>
+
+            <TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/>
+
+            <TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/>
+
+            <TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/><TextSpasm text="hallaballa"/>
 
 
-            <Route path="/" exact component={FrontPage}></Route>
+            COLORS
+            "value": ["#BD10E0","#B8E986","#50E3C2","#FFD300","#E86363"]*/
+    render() {
+    return (
+        <div className="App" style={{width:"100vw",height:"100vh"}}>
+            <div>
+                <TextSpasm amount={1} speed={2}/>
+       </div>
+
+            <Switch>
+                <Route path="/" exact component={FrontPage}></Route>
+                <Route path="/" component={filiptangen}></Route>
+            </Switch>
             <Route path="/kunnskap" exact component={Kunnskap}></Route>
             <Route path="/erfaring" exact component={Erfaring}></Route>
             <Route path="/personlighet" exact component={Personlighet}></Route>
             <Route path="/ekstra" exact component={Ekstra}></Route>
+
 
         </div>
     );
