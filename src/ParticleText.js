@@ -124,10 +124,9 @@ export function renderText() {
     }
 
     shape.prototype.getValue = function () {
-        console.log("get black pixels position");
 
         // Draw the shape :^)
-
+/*
         ctx.textAlign = "center";
         ctx.font = "bold " + this.size + "px arial";
         ctx.fillText(this.text, this.x, this.y);
@@ -135,7 +134,7 @@ export function renderText() {
 
         var idata = ctx.getImageData(0, 0, W, H);
 
-        var buffer32 = new Uint32Array(idata.data.buffer);
+        var buffer32 = new Uint32Array(idata.data.buffer);*/
 
         var data = [
                 [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
@@ -149,8 +148,6 @@ export function renderText() {
                 [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
         ];
 
-
-        let string = "";
         for (var y = 0; y < data.length; y += 1/*gridY*/) {
             for (var x = 0; x < data[y].length; x += 1/*gridX*/) {
 
@@ -169,8 +166,8 @@ export function renderText() {
             }
             //string +="\n";
 
-        }
-        console.log(string);
+        }/*
+        console.log(string);*/
         ctx.clearRect(0, 0, W, H);
 
     }

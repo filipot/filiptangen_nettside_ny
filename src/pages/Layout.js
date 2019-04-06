@@ -159,7 +159,7 @@ class Layout extends Component {
                 </div>
 
 
-                <div className="chevron bottom shadow ">
+                <div className="chevron bottom shadow " style={{opacity:"1"}} onClick={this.getNextPage.bind(this)}>
                     <div className="chevron bottom shadow ">
                             <svg width="60" height="60" className="shadow_test_2" style={{position:"relative", bottom:"50px", right:"11px"}}>
                                 <path d={"M20.5,5 h" + h + " a" + h2 + "," + h2 + " 0 0 1 " + h2 + ", " + h2 +
@@ -176,6 +176,7 @@ class Layout extends Component {
 
 
                 </div>
+
             </div>
         )
     }/*

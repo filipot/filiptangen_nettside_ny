@@ -20,7 +20,7 @@ class RedirectButton extends Component {
     };
     render() {
         return(
-            <Button onClick={() => { this.redirect()}} style={{width:"100px", height:"80px"}}>
+            <Button onClick={() => { this.redirect()}} style={{width:"100px", height:"80px", borderRadius:"0px 5px 5px 0px"}}>
                 {this.props.src}<p>
                 {this.props.name}</p>
             </Button>

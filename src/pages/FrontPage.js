@@ -19,6 +19,9 @@ import RedirectButton from './RedirectButton';
 import {CSSTransitionGroup} from 'react-transition-group'
 import Layout from "./Layout";
 
+import linkedinImage from "../images/linkedin.png"
+import deviantImage from "../images/deviant.png"
+
 class FrontPage extends Component {
     state = {
         show: true,
@@ -41,6 +44,16 @@ className="shadow_test" style={{margin:"20px", width:'100%', height:'70%', minHe
 
     *
     * */
+
+
+    /*                                                            <p></p>
+                                                        Selvlært programmerer med muligheten for å lære nye ting veldig kjapt. Stor interesse innenfor innovasjon og det å skape produkter. Er fremoverrettet og elsker å jobbe med nyskaping.
+                                                        //Nevn fullstack, nevn frontend, nevn spill, nevn entreprenørskap nevn trening, nevn
+                                                            Liker å være kreativ og ønsker en dag å opprette mitt eget selskap
+                                                        <p>Bilde med ting som trening, friluft, programmering, </p>
+
+                                                            <p>GLAD I Å HJELPE. GOD I TEAMS.
+                                                            Jeg elsker å møte nye folk. Alle er mine venner</p>*/
     render() {
         return (
             <div>
@@ -61,14 +74,33 @@ className="shadow_test" style={{margin:"20px", width:'100%', height:'70%', minHe
                             <div className="center_content" style={{width: '100%', height: '100%'}}>
                                 <Row style={{height: '100%'}}>
                                     <Col sm={4} style={{height: "100%"}}>
-                                        <Card className="shadow-sm card-border" >
+                                        <Card className="shadow-sm card-border"  style={{height:"60vh"}}>
 
                                             <Container style={{maxWidth: "max-content", height: '100%'}}>
                                                 <Card.Body>
 
-                                                    <Card.Title><h2>Filip Tangen</h2></Card.Title>
-                                                    <Card.Text>
-                                                        Linkedin
+                                                    <Card.Title>
+                                                        <img style={{width:"200px",height:"200px"}}/>
+                                                        <h2>Filip Tangen</h2></Card.Title>
+                                                    <Card.Text style={{textAlign:"left"}}>
+                                                        <br/>
+
+
+                                                        <p><strong>Bosted:</strong> Trondheim og Bergen</p>
+                                                        <p><strong>Studie:</strong> Andre klasse i bachelor i Informatikk på NTNU</p>
+                                                        <p><strong>Alder:</strong> 20 år</p>
+
+
+
+                                                        <p><h5>Kontakt meg</h5></p>
+                                                        <p><strong>Email:</strong> filiptangen1998@live.com</p>
+                                                        <p><strong>Telefon:</strong> 91334562</p>
+
+                                                        <a href="https://www.linkedin.com/in/filip-tangen-61614015b/" target="_blank"><img src={linkedinImage} style={{width:"40px", height:"40px",position:"relative",top:"-10px", left:"-7px"}}/></a>
+                                                        <a href="https://www.deviantart.com/vermacian55/gallery/" target="_blank"><img src={deviantImage} style={{width:"25px", height:"25px",position:"relative",top:"-10px", left:"-7px"}}/></a>
+
+
+
                                                     </Card.Text>
                                                 </Card.Body>
                                             </Container>
@@ -88,15 +120,33 @@ className="shadow_test" style={{margin:"20px", width:'100%', height:'70%', minHe
 
                                     <Col sm={7}>
 
-                                        <Card className=" shadow-sm card-border">
+                                        <Card className=" shadow-sm card-border"   style={{height:"60vh"}}>
 
                                             <Container style={{maxWidth: "max-content", height: '100%'}}>
                                                 <Card.Body>
+                                                    <br/>
 
-                                                    <Card.Title>Hello!</Card.Title>
-                                                    <Card.Text>
-                                                        Jeg ønsker meg en jobb
-                                                    </Card.Text>
+                                                    <Card.Title>Om meg</Card.Title>
+                                                    <Card.Text className="d-flex justify-content-center" >
+                                                        <div  style={{width:"80%"}}>
+                                                            <br/>
+                                                            <p>Jeg en full stack developer</p>
+                                                            <p>Jeg lærer fort</p>
+                                                            <p>Jeg er god til å samarbeide</p>
+                                                            <p>Jeg elsker å møte nye folk</p>
+                                                            <p>Jeg elsker å presentere</p>
+                                                            <p>Jeg er en hjelpende hånd</p>
+                                                            <p>Jeg elsker å kunne bruke kreativiten til å designe</p>
+                                                            <p>Jeg synes innovasjon er det gøyeste som finnes og har stor interesse innenfor grundermiljøet</p>
+                                                            <p>Jeg er glad i å trene</p>
+                                                            <br/>
+
+
+
+
+                                                        <button onClick={()=>{this.setState({show: false});setTimeout(()=>{this.props.history.push("/kunnskap")},400)}}> Se hva jeg kan </button>
+                                                        </div>
+                                                        </Card.Text>
                                                 </Card.Body>
                                             </Container>
 

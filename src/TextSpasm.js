@@ -20,7 +20,7 @@ class TextSpasm extends Component {
         "/* please work */",
         "Singelton: THERE CAN ONLY BE ONE ",
         "OOPS: child died",
-            "0 - 1 = nuclear gandhi",
+            "0 - 1 = nuclear g      andhi",
         "I use arch btw",
         "error: Success",
         "Keyboard not found. Press F1 to Resume",
@@ -228,7 +228,6 @@ class TextSpasm extends Component {
     }
 
     handleClick(e){
-        e.preventDefault();
         let x = e.clientX;
         let y = e.clientY;
         let list = this.state.list;
