@@ -7,16 +7,37 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /*background-color:lightblue;*/
-  background-image: linear-gradient(to right, #EEEEEE , #EAEFED );
+  background-image: linear-gradient(to right, #EDB448 , #eebb5a );
   /*
   background-image: url("./background2.png");
   background-repeat: repeat;
   background-size: 500px 500px;
   background-position: -150px -150px;*/
   /*Hides scrollbar and makes it non scrollable*/
-  overflow: hidden!important;
+
     height:100%;
 }
+
+
+.lightshade-bg{
+  background-color:#EFF4EE;
+}
+
+.darkshade-text{
+  color:#0C1314;
+}
+
+.darkaccent-bg{
+  background-color:#AD504D;
+}
+
+.darkaccent-text{
+  color:#AD504D;
+}
+
+
+
+
 
 
 .container:after {
@@ -43,8 +64,31 @@ body {
 }
 
 
+.bs-button{
+
+  border: 2px solid red;
+  border-radius: 3px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  background-color:#EFF4EE;
+  color:#AD504D;
+}
+
+.only-mobile{
+  display:none
+}
+
+@media (max-width: 800px) {
+  .only-mobile{
+    display:block;
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    background-color:white;
+  }
+}
 .shadow_test{
-  box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+  box-shadow: 1px -1px #EFF4EE, 2px -2px #EFF4EE, 3px -3px #EFF4EE, 4px -4px #EFF4EE, 5px -5px #EFF4EE, 6px -6px #EFF4EE, 7px -7px #EFF4EE, 8px -8px #EFF4EE;
   /*-webkit-transform: translateX(-8px) translateY(8px);
   transform: translateX(-8px) translateY(8px);*/
 
@@ -54,7 +98,7 @@ body {
 }
 
 .shadow_test_2{
-  filter:drop-shadow(1px -2px #3e3e3e) /*drop-shadow(2px -3px #3e3e3e) drop-shadow(3px -4px #3e3e3e)*/;
+  filter:drop-shadow(1px -1px #EFF4EE) /*drop-shadow(2px -3px #3e3e3e) drop-shadow(3px -4px #3e3e3e)*/;
 
   /*
   box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;*/
@@ -73,6 +117,7 @@ body {
   margin-bottom: 3px;
   height: 2px;
   width: 20px;
+
 }
 .chevron:before {
   content: '';
@@ -83,6 +128,7 @@ body {
   width: 51%;
   background: white;
   transform: skew(0deg, 40deg);
+  background-color:#AD504D;
 }
 .chevron:after {
   content: '';
@@ -93,6 +139,7 @@ body {
   width: 50%;
   background: white;
   transform: skew(0deg, -40deg);
+  background-color:#AD504D;
 }
 
 .bottom {

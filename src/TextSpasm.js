@@ -20,7 +20,7 @@ class TextSpasm extends Component {
         "/* please work */",
         "Singelton: THERE CAN ONLY BE ONE ",
         "OOPS: child died",
-            "0 - 1 = nuclear g      andhi",
+            "0 - 1 = nuclear gandhi",
         "I use arch btw",
         "error: Success",
         "Keyboard not found. Press F1 to Resume",
@@ -210,7 +210,8 @@ class TextSpasm extends Component {
             element[i].style.position = 'fixed';
             element[i].style.willChange = "transform";
             element[i].style.transform = "translate(" + this.state.list[i].x + "px" + "," + this.state.list[i].y + "px)";
-            element[i].style.color = "#8888";
+            //element[i].style.color = "#FF7F50";
+            element[i].style.color = "#FFF";
             element[i].style.display = "block";
             element[i].style.cursor = "default";
             element[i].style.userSelect = "none";

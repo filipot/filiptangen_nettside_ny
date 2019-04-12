@@ -1,6 +1,16 @@
 To bilder. en sikkelig og en tullebilde
 
 
+//Kule sider
+https://makingwaves.com/
+apple
+www.bekk.no
+http://taotajima.jp/
+http://vaalentin.github.io/2015/
+https://aarkcollective.com/
+https://nordichealthhackathon.com/
+itla
+
 //FULLSTACK
 https://icons8.com/icon/18590/sheets
 //fort
@@ -36,7 +46,7 @@ Det er svært skjeldent jeg møter noen jeg ikke liker
 
 Verktøy:
 axios, Django Rest, Fetch, Node.js, javascript, webtoken,
-Bootstrap, ant d, materialize, framework7,
+css frameworks:Bootstrap, ant d, materialize, framework7, w3.css
 
 AMAZING CSS:
 https://freefrontend.com/css-arrows/
@@ -180,6 +190,9 @@ Light shades
 Use this color as the background for your dark-on-light designs, or the text color of an inverted design.
 EAEFED
 EFF4EE
+F3EFED
+
+F3F8ED
 
 
 JUNIPER
@@ -188,6 +201,9 @@ Accent colors can be used to bring attention to design elements by contrasting w
 
 778D8D
 A0B396
+77989F
+
+9C978C
 
 ANZAC
 Main brand color
@@ -195,17 +211,26 @@ This color should be eye-catching but not harsh. It can be liberally applied to 
 
 DFA638
 EDB448
+ffe878
+
+FFE878
 
 FLAMINGO
 Dark accent
 Another accent color to consider. Not all colors have to be used - sometimes a simple color scheme works best.
 
 EC5B2C
-AD504D
+AD504D //Maybe FF7F50
+9E523D
+
+C2675E
 
 PLANTATION
 Dark shades
 Use as the text color for dark-on-light designs, or as the background for inverted designs.
 
 253C3E
-3F6367
+3F6367   ///MAybe 0C1314
+0C0D0D
+
+000000

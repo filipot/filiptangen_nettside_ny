@@ -1,4 +1,4 @@
-// ./src/pages/FrontPage.js
+// ./src/pages/Frontendjs
 import React, {Component} from 'react';
 import Button from 'react-bootstrap/Button';
 
@@ -74,7 +74,7 @@ className="shadow_test" style={{margin:"20px", width:'100%', height:'70%', minHe
                             <div className="center_content" style={{width: '100%', height: '100%'}}>
                                 <Row style={{height: '100%'}}>
                                     <Col sm={4} style={{height: "100%"}}>
-                                        <Card className="shadow-sm card-border"  style={{height:"60vh"}}>
+                                        <Card className="shadow-sm card-border lightshade-bg darkshade-text"  style={{height:"60vh"}}>
 
                                             <Container style={{maxWidth: "max-content", height: '100%'}}>
                                                 <Card.Body>
@@ -120,7 +120,7 @@ className="shadow_test" style={{margin:"20px", width:'100%', height:'70%', minHe
 
                                     <Col sm={7}>
 
-                                        <Card className=" shadow-sm card-border"   style={{height:"60vh"}}>
+                                        <Card className=" shadow-sm card-border lightshade-bg darkshade-text"   style={{height:"60vh"}}>
 
                                             <Container style={{maxWidth: "max-content", height: '100%'}}>
                                                 <Card.Body>

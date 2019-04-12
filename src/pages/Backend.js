@@ -5,6 +5,21 @@ import RedirectButton from "./RedirectButton";
 
 import Layout from "./Layout";
 
+import bootstrap from "../images/kunnskap/bootstrap.png"
+import csharp from "../images/kunnskap/c#.png"
+import cplusplus from "../images/kunnskap/c++.png"
+import django from "../images/kunnskap/django.png"
+import djangorest from "../images/kunnskap/djangorest.png"
+import java from "../images/kunnskap/java.jpg"
+import python from "../images/kunnskap/python.png"
+import materialize from "../images/kunnskap/materialize.png"
+import antd from "../images/kunnskap/antd.svg"
+import node from "../images/kunnskap/node.png"
+import react from "../images/kunnskap/react.png"
+import htmlcssjavascript from "../images/kunnskap/html-css-javascript.png"
+import php from "../images/kunnskap/php.png"
+import webcollection from "../images/kunnskap/web-collection.png"
+
 /*transitionAppear={true}
                 transitionLeave={true}
                 transitionAppearTimeout={2000}
@@ -117,9 +132,9 @@ class Kunnskap extends Component {
 
                                 <div className="card">
                                     <div className="card-header">
-                                        Card Header
+                                        Front end
                                     </div>
-                                    <img className="card-img-top" src="https://source.unsplash.com/daily" alt="Card image top"/>
+                                    <img className="card-img-top" src={webcollection} alt="Card image top"/>
                                         <div className="card-body">
                                             <h3 className="card-title">Each Card body can have a title</h3>
                                             <h4 className="card-subtitle">And a subtitle</h4>
@@ -185,11 +200,13 @@ class Kunnskap extends Component {
                                 <div className="card text-primary border-primary">
 
                                     <div className="card-body">
-                                        <h2 className="card-title"> My List</h2>
+                                        <h2 className="card-title"> CSS frameworks</h2>
                                         <ul className="list-group list-group-flush">
-                                            <li className="list-group-item">Item 1</li>
-                                            <li className="list-group-item">Item 2</li>
-                                            <li className="list-group-item">Item 3</li>
+                                            <li className="list-group-item p-0"><img className="" style={{height:"40px"}} src={materialize} alt="Card image top"/>Materialize</li>
+                                            <li className="list-group-item p-0"><img className="" style={{height:"30px"}} src={antd} alt="Card image top"/>Ant d</li>
+                                            <li className="list-group-item p-0"><img className="" style={{height:"40px"}} src={antd} alt="Card image top"/>W3.CSS</li>
+                                            <li className="list-group-item p-0"><img className="" style={{height:"40px"}} src={bootstrap} alt="Card image top"/>Bootstrap</li>
+                                            <li className="list-group-item p-0"><img className="" style={{height:"40px"}} src={materialize} alt="Card image top"/>Materialize</li>
                                         </ul>
                                     </div>
 
@@ -214,6 +231,7 @@ class Kunnskap extends Component {
                                 </div>
 
                                 <div className="card">
+                                    <h5 className="card-title">Card title</h5>
                                     <div className="card-header">
                                         <ul className="nav nav-tabs card-header-tabs">
                                             <li className="nav-item">

@@ -9,6 +9,7 @@ import { FiCode } from "react-icons/fi";
 import {  Glyphicon } from 'react-bootstrap';*/
 import {CSSTransitionGroup} from "react-transition-group";
 import RedirectButton from "./RedirectButton";
+import RedirectButtonsmall from "./RedirectButtonsmall";
 import {withRouter} from 'react-router-dom';
 import  "../styles/layout.css";
 
@@ -19,9 +20,20 @@ import icon3 from '../images/icons8-work-96.png'; // Tell Webpack this JS file u
 
 class Layout extends Component {
 
+    constructor(props){
+        super(props);
+
+        this.state={
+            b:window.buttondisabled
+        }
+    }
+
+
     componentDidMount() {/*
         document.onwheel = this.onWheel.bind(this);*/
         window.addEventListener("wheel", this.onWheel/*event => console.info(event.deltaY)*/);
+
+
 
     }
     componentWillUnmount(){
@@ -29,9 +41,33 @@ class Layout extends Component {
     }
 
     redirect = (path) =>{
+
+
+
+        let b = 0;
+        switch(path){
+            case "/":
+                b = 0;
+                break;
+            case "/frontend":
+                b = 1;
+                break;
+            case "/backend":
+                b = 2;
+                break;
+            case "/erfaring":
+                b = 3;
+                break;
+        }
+        if(this.state.b === b){
+            return;
+        }
+
+        this.setState({b:b});
+        window.buttondisabled = b;
+
         this.props.destroy();
         let timeout = this.props.timeout;
-
         setTimeout(() => {
             this.props.history.push(path)
         }, timeout)
@@ -45,11 +81,14 @@ class Layout extends Component {
         if(path === "/")
             return;
         switch(path){
-            case "/kunnskap":
+            case "/frontend":
                 path = "/";
                 break;
+            case "/backend":
+                path = "/frontend";
+                break;
             case "/erfaring":
-                path = "/kunnskap";
+                path = "/backend";
                 break;
             case "/personlighet":
                 path = "/erfaring";
@@ -65,9 +104,12 @@ class Layout extends Component {
         let path = this.props.location.pathname;
         switch(path){
             case "/":
-                path = "/kunnskap";
+                path = "/frontend";
                 break;
-            case "/kunnskap":
+            case "/frontend":
+                path = "/backend";
+                break;
+            case "/backend":
                 path = "/erfaring";
                 break;
             case "/erfaring":
@@ -97,14 +139,19 @@ class Layout extends Component {
 
         }
         window.can_switch_page = false;*/
+        console.log(document.body.offsetHeight);
 
-        if (event.deltaY< 0) {
+        if (event.deltaY< -10) {
                 this.getPreviousPage();
 
-        } else {
+        } else if(event.deltaY > 10) {
+
+            if ((window.innerHeight + event.deltaY) > document.body.offsetHeight){
                 this.getNextPage();
+            }
 
         }
+
     }
 /*onWheel={this.onWheel} */
 
@@ -131,24 +178,65 @@ class Layout extends Component {
         let v2 = 10;
         return(
             <div className="outer"  style={{width:"0px"}}>
-                <div className="middle">
+                <div className="middle d-none d-sm-none d-md-block d-lg-block d-xl-block">
                     <div style={{float:"left"}} >
                         <ul >
                             <li>
                                 <RedirectButton
                                 src={<MdAccountBox/>}
-                                    name="Meg" timeout={this.props.timeout} path="/" destroy ={() => { this.props.destroy();}}/>
+                                redirect={(path)=>{this.redirect(path)}}
+                                    name="Meg" timeout={this.props.timeout} path="/" destroy ={() => { this.props.destroy();}} disabled={(this.state.b === 0)}/>
 
                             </li>
 
                             <li>
                                 <RedirectButton
                                     src={<FaBook/>}
+                                    disabled={false}
+                                    redirect={(path)=>{this.redirect(path)}}
 
-                                    name="Kunnskap" timeout={this.props.timeout} path="/kunnskap" destroy ={() => { this.props.destroy();}}/>
+                                    name="Kunnskap" timeout={this.props.timeout} path="/frontend" destroy ={() => { this.props.destroy();}}>
+
+                                    <RedirectButtonsmall
+                                        disabled={(this.state.b === 1)}
+                                        redirect={(path)=>{this.redirect(path)}}
+                                        name="Frontend" timeout={this.props.timeout} path="/frontend" destroy ={() => { this.props.destroy();}}>
+
+
+
+                                    </RedirectButtonsmall>
+                                    <RedirectButtonsmall
+                                        disabled={(this.state.b === 2)}
+                                        redirect={(path)=>{this.redirect(path)}}
+                                        name="Backend" timeout={this.props.timeout} path="/backend" destroy ={() => { this.props.destroy();}}>
+
+
+
+                                    </RedirectButtonsmall>
+
+                                </RedirectButton>
                             </li>
                             <li>
-                                <RedirectButton src={<FiCode/>}name="Erfaring" timeout={this.props.timeout} path="/erfaring" destroy ={() => { this.props.destroy();}}/>
+                                <RedirectButton redirect={(path)=>{this.redirect(path)}} src={<FiCode/>}name="Erfaring" timeout={this.props.timeout} path="/erfaring" destroy ={() => { this.props.destroy();}}
+                                                disabled={false}>
+                                    <RedirectButtonsmall
+                                        disabled={(this.state.b === 3)}
+                                        redirect={(path)=>{this.redirect(path)}}
+                                        name="2019" timeout={this.props.timeout} path="/backend" destroy ={() => { this.props.destroy();}}>
+                                    </RedirectButtonsmall>
+                                    <RedirectButtonsmall
+                                        disabled={(this.state.b === 4)}
+                                        redirect={(path)=>{this.redirect(path)}}
+                                        name="2018" timeout={this.props.timeout} path="/backend" destroy ={() => { this.props.destroy();}}>
+                                    </RedirectButtonsmall>
+                                    <RedirectButtonsmall
+                                        disabled={(this.state.b === 5)}
+                                        redirect={(path)=>{this.redirect(path)}}
+                                        name="2017" timeout={this.props.timeout} path="/backend" destroy ={() => { this.props.destroy();}}>
+                                    </RedirectButtonsmall>
+
+
+                                </RedirectButton>
                             </li>
 
                         </ul>
@@ -159,15 +247,15 @@ class Layout extends Component {
                 </div>
 
 
-                <div className="chevron bottom shadow " style={{opacity:"1"}} onClick={this.getNextPage.bind(this)}>
+                <div className="chevron bottom shadow darkaccent-text shadow_test_2" style={{opacity:"1"}} onClick={this.getNextPage.bind(this)}>
                     <div className="chevron bottom shadow ">
-                            <svg width="60" height="60" className="shadow_test_2" style={{position:"relative", bottom:"50px", right:"11px"}}>
+                            <svg width="60" height="60" className="" style={{position:"relative", bottom:"50px", right:"11px"}}>
                                 <path d={"M20.5,5 h" + h + " a" + h2 + "," + h2 + " 0 0 1 " + h2 + ", " + h2 +
                                     " v" + v + " a" + v2 + "," + v2 + " 0 0 1 " + -v2 + ", " + v2 +
                                     "h" + -h + " a" + h2 + "," + h2 + " 0 0 1 " + -h2 + ", " + -h2 +
                                     " v" + -v + " a" + v2 + "," + v2 + " 0 0 1 " + v2 + ", " + -v2 +
                                 "M21,10 v7 z"}
-                                    fill="none" stroke="white" strokeWidth="1"
+                                    fill="none" stroke="#AD504D" strokeWidth="1"
                                 />
                             </svg>
                     </div>

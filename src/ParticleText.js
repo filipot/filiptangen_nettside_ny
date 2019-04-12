@@ -173,7 +173,7 @@ export function renderText() {
     }
     let colors = [
 
-        '#000000'
+        '#FF7F50','#FF6347'
         /*'#f44336', '#e91e63', '#9c27b0', '#673ab7', '#3f51b5',
         '#2196f3', '#03a9f4', '#00bcd4', '#009688', '#4CAF50',
         '#8BC34A', '#CDDC39', '#FFEB3B', */
@@ -287,11 +287,11 @@ export function renderText() {
     element6 = document.getElementById("6");
     */
     let fieldvalue = "Filip Tangen";
-    let gravity = -0.005;
+    let gravity = -0.03;
     let duration = 0.5;
     let speed = 0;
-    let minradius = 7.0;
-    let radius = 7;
+    let minradius = 6.0;
+    let radius = 8;
 
     var message = new shape(W / 2, H / 2 + 50, fieldvalue);
 
