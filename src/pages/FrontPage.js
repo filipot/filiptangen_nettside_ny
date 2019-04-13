@@ -141,9 +141,6 @@ className="shadow_test" style={{margin:"20px", width:'100%', height:'70%', minHe
                                                             <p>Jeg er glad i å trene</p>
                                                             <br/>
 
-
-
-
                                                         <button onClick={()=>{this.setState({show: false});setTimeout(()=>{this.props.history.push("/kunnskap")},400)}}> Se hva jeg kan </button>
                                                         </div>
                                                         </Card.Text>

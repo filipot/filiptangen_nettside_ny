@@ -215,6 +215,7 @@ class TextSpasm extends Component {
             element[i].style.display = "block";
             element[i].style.cursor = "default";
             element[i].style.userSelect = "none";
+            element[i].style.zIndex="-500";
             this.state.list[i].width = element[i].offsetWidth;
             this.state.list[i].height = element[i].offsetHeight;
             /*element[i].style.left = this.state.list[i].x + "px";
