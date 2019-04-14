@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
 import TextSpasm from '../TextSpasm.js'
 import * as ParticleText from "../ParticleText";
-
+import OpenEffect from '../components/openeffect'
 class filiptangen extends Component {
 
 
     componentDidMount() {
 
-        ParticleText.renderText();
+        setTimeout(function(){ ParticleText.renderText()}, 200);
     }
 
     render() {
         return(
-            <canvas id="canvas" style={{left:"", top:"-20px", width:"200px", height:"", translate:"transformX(-50%)"}}></canvas>
+            <div>
 
+            <OpenEffect className="open-effect-slide-down filiptangen" when={0} whenclose={0} alwaysDisplay>
+                <canvas className="" style={{width:"200px"}} id="canvas" ></canvas>
+            </OpenEffect>
+            </div>
         )
     }
 }

@@ -6,7 +6,7 @@ import RedirectButton from "./RedirectButton";
 import Layout from "./Layout";
 
 import bootstrap from "../images/kunnskap/bootstrap.png"
-import csharp from "../images/kunnskap/c#.png"
+import csharp from "../images/kunnskap/csharp.png"
 import cplusplus from "../images/kunnskap/c++.png"
 import django from "../images/kunnskap/django.png"
 import djangorest from "../images/kunnskap/djangorest.png"

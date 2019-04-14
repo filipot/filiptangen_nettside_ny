@@ -172,8 +172,9 @@ export function renderText() {
 
     }
     let colors = [
-
-        '#FF7F50','#FF6347'
+'#e6a340'
+        /*
+        '#FF7F50','#FF6347'*/
         /*'#f44336', '#e91e63', '#9c27b0', '#673ab7', '#3f51b5',
         '#2196f3', '#03a9f4', '#00bcd4', '#009688', '#4CAF50',
         '#8BC34A', '#CDDC39', '#FFEB3B', */

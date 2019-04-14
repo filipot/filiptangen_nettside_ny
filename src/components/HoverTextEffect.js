@@ -4,13 +4,7 @@ import React, {Component} from 'react';
 class HoverTextEffect extends Component {
     constructor(props){
         super(props);
-        this.state = {
-            t1: ['er en',],
-            t2: ['fullstack-utvikler',
-            'innovasjon'],
 
-
-        };
     }
 
     componentDidMount() {
@@ -18,15 +12,6 @@ class HoverTextEffect extends Component {
     componentWillUnmount(){
     }
 
-    increaseT(t, maxSize){
-        if(t >= maxSize){
-            t = 0;
-        }
-        else{
-            t ++;
-        }
-        return t;
-    }
 
 
     handleElement(element){
@@ -34,21 +19,39 @@ class HoverTextEffect extends Component {
         if(!element){
             return;
         }
-        if(!(element.tagName.toLowerCase() === "div")){
+        if(element.id === "last"){
+            return;
+        }
+
+        if(element.parentNode === null){
             return;
         }
 
         let children = element.children;
         for (let i = 0; i < children.length; i++) {
             let child = children[i];
-            child.style.display = "block";
-            child.addEventListener("mouseout", (e)=>{this.goOneLevelDown(e)});
-            child.addEventListener("click", (e)=>{this.goOneLevelDown(e)});
-            element.parentNode.insertBefore(child,
+            element.parentNode.insertBefore(child.cloneNode(true),
                 element);
         }
-        if(!element.parentNode){
-            return;
+
+        children = element.parentNode.children;
+        console.log(children);
+        for (let i = 0; i < children.length; i++) {
+            console.log(i);
+            let child = children[i];
+            if(child === undefined){
+                continue;
+            }
+            if(!(child.tagName === "SPAN")){
+                continue;
+            }
+            child.style.display = "inline-block";
+            child.addEventListener("mouseleave", (e)=>{
+                e.currentTarget.addEventListener("mouseenter", (e)=>{this.goOneLevelDown(e)});
+            });
+
+            child.addEventListener("click", (e)=>{this.goOneLevelDown(e)});
+            child.className="hover-effect-text m-1";
         }
 
         element.parentNode.removeChild(element);
@@ -63,42 +66,75 @@ class HoverTextEffect extends Component {
         }
 
         /*Removes the parent but keeps the children*/
-            setTimeout(()=>{
-                this.handleElement(element);
-            }, 100);
+        this.handleElement(element);
+
     }
 
 
     render() {
         return (
-            <div>
-                <div onMouseOut={this.goOneLevelDown.bind(this)} onClick={this.goOneLevelDown.bind(this)}>
+            <h2 className="dropdown-shadow">
+
+                <span id="last" className="hover-effect-text m-1" onMouseEnter={this.goOneLevelDown.bind(this)} onClick={this.goOneLevelDown.bind(this)}>
                     Jeg
-                <div style={{display:"none"}}>test
-                    <div style={{display:"none"}}><span>test2</span>
-                    </div></div></div>
-
-                <div onMouseOut={this.goOneLevelDown.bind(this)} onClick={this.goOneLevelDown.bind(this)}>
-                    Jeg
-                    <div style={{display:"none"}}>test
-                        <div style={{display:"none"}}><span>test2</span>
-                        </div></div></div>
+                </span>
 
 
-                <div onMouseOut={this.goOneLevelDown.bind(this)} onClick={this.goOneLevelDown.bind(this)}>
-                    Jeg
-                    <div style={{display:"none"}}>test
-                        <div style={{display:"none"}}><span>test2</span>
-                        </div></div></div>
 
-                <div onMouseOut={this.goOneLevelDown.bind(this)} onClick={this.goOneLevelDown.bind(this)}>
-                    Jeg
-                    <div style={{display:"none"}}>test
-                        <div style={{display:"none"}}><span>test2</span>
-                        </div></div></div>
+                <span className="hover-effect-text m-1"  onMouseEnter={this.goOneLevelDown.bind(this)} onClick={this.goOneLevelDown.bind(this)}>
+                    er en fullstack-utvikler
 
 
-            </div>
+                    <span style={{display:"none"}}>tror på
+                        <span style={{display:"none"}}>elsker
+                            <span style={{display:"none"}}>digger
+                                <span style={{display:"none"}}>	&lt;3
+                                    <span style={{display:"none"}}>er god i
+                                        <span style={{display:"none"}}>finner glede i
+                                            <span style={{display:"none"}}>setter pris på
+                                                <span style={{display:"none"}}>ønsker
+                                                    <span id="last" style={{display:"none"}}>liker
+                        </span>
+                        </span>
+                        </span>
+                        </span>
+                        </span>
+                        </span>
+                        </span>
+                        </span></span>
+
+                    <span style={{display:"none"}}>innovasjon
+                        <span style={{display:"none"}}>trening
+                            <span style={{display:"none"}}>miljøet
+                                <span style={{display:"none"}}>å være rundt folk
+                                    <span style={{display:"none"}}>å møte nye personer
+                                        <span style={{display:"none"}}>å designe
+                                            <span style={{display:"none"}}>å være en hjelpende hånd
+                                                <span style={{display:"none"}}>å lære
+                                                    <span style={{display:"none"}}>å være kreativ
+                                                        <span style={{display:"none"}}>å lage ting
+                                                            <span style={{display:"none"}}>å være positiv
+                                                                <span id="last" style={{display:"none"}}>alt
+                        </span>
+                        </span>
+                        </span>
+                        </span>
+                        </span>
+                        </span>
+                        </span>
+                        </span>
+                        </span>
+                        </span>
+                        </span></span>
+
+                </span>
+
+
+
+
+
+
+            </h2>
 
         )
     }

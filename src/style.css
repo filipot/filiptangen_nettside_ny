@@ -2,6 +2,15 @@ body{
     background-color:black;
     color:white;
     overflow-X:hidden;
+
+
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 
@@ -21,6 +30,10 @@ body{
 }
 .third-height{
     height:33vh;
+}
+
+.half-height{
+    height:50vh;
 }
 .background-div{
     width:100%;
@@ -155,6 +168,9 @@ body{
 
     80%{
         clip-path: inset(0% 0% 0% 0%);
+        filter: blur(0px);
+        opacity:1.0;
+        clip-path: inset(0% 0% 0% 0%);
     }
     100% {
         filter: blur(0px);
@@ -163,16 +179,171 @@ body{
     }
 }
 
+
+
 /*END*/
 
+/*Open effects*/
+.open-effect-left{
+    animation: open-inset-effect 0.5s  cubic-bezier(.42,0,.58,1) both;
+}
+.open-effect-right{
+    animation: open-inset-effect-right 0.5s  cubic-bezier(.42,0,.58,1) both;
+}
+
+.open-effect-slide-up{
+    animation: ani-open-effect-slide-up 1s  cubic-bezier(.42,0,.58,1) both;
+
+}
+
+.open-effect-slide-down{
+    animation: ani-open-effect-slide-down 1s  cubic-bezier(.42,0,.58,1) both ;
+}
+
+.scale-on-hover-big:hover{
+    transform:scale(1.25);
+}
+.scale-on-hover-big{
+    transition: all .1s ease-in-out;
+}
+
+/*Used for the icons so*/
+@media(max-width:1092px){
+    .scale-on-hover-big{
+        transform:scale(0.75);
+    }
+}
+
+.scale-on-hover:hover{
+    transform:scale(1.035);
+
+
+}
+
+.scale-on-hover{
+    transition: all .1s ease-in-out;
+}
+
+.open-effect-text-opacity{
+    animation: text-opacity 0.5s  cubic-bezier(.42,0,.58,1) both;
+
+}
+
+@keyframes ani-scale-on-hover{
+    0% {
+        padding:0;
+        transform:scale(1);
+    }
+
+    100%{
+        padding:5px;
+        transform:scale(1.02);
+    }
+}
+
+@keyframes ani-open-effect-slide-up {
+    0% {
+
+        transform:translate(0px, 100px);
+        opacity:0;
+    }
+
+    100%{
+
+        transform:translate(0px, 0px);
+        opacity:1;
+    }
+}
+
+@keyframes ani-open-effect-slide-down {
+    0% {
+
+        transform:translate(0px, -100px);
+        opacity:0;
+    }
+
+    100%{
+
+        transform:translate(0px, 0px);
+        opacity:1;
+    }
+}
+
+
+@keyframes open-inset-effect {
+    0% {
+        clip-path: inset(0% 95% 0% 0%);
+
+    }
+    40%{
+        clip-path: inset(0% 95% 0% 0%);
+    }
+
+    100%{
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}
+@keyframes open-inset-effect-right {
+    0%{
+        opacity:0;
+        clip-path: inset(0% 0% 0% 95%);
+    }
+    40%{
+        clip-path: inset(0% 0% 0% 95%);
+        opacity:100%;
+    }
+
+    100%{
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}
+/*END*/
+
+/*Front page*/
 .front-page-text{
     animation: text-open 2s  cubic-bezier(.42,0,.58,1) both;
     background-color: #090909;
+    height:441px;
     /*margin-left:-50px;*/
 }
 .front-page-text-inner{
     animation: text-opacity 3s  cubic-bezier(.42,0,.58,1) both;
 }
+
+.front-page-full-height{
+    height:100vh;
+}
+
+.justify-content-md-center-always{
+    justify-content: center!important;
+    width:100%;
+}
+@media(max-width:633px){
+    .front-page-full-height{
+        height:auto;
+    }
+}
+
+@media(max-width:1200px){
+    .front-page-text{
+        height:371px;
+    }
+}
+@media(max-width:991px){
+    .front-page-text{
+        height:278px;
+    }
+}
+
+@media(max-width:768px){
+    .front-page-text{
+        height:371px;
+    }
+}
+
+
+
+/*END*/
 
 .dropdown-shadow{
     filter:drop-shadow(1px 1px);
@@ -200,5 +371,24 @@ body{
     100%{
         opacity:1;
     }
-
 }
+
+/*Hover effect*/
+.hover-effect-text{
+}
+
+/**/
+
+/*Kunnskap*/
+
+.scrollable{
+    overflow:scroll!important;
+}
+/**/
+
+/*filiptangen name*/
+.filiptangen{
+    width:200px;
+    position:fixed;
+}
+/**/
