@@ -288,11 +288,16 @@ export function renderText() {
     element6 = document.getElementById("6");
     */
     let fieldvalue = "Filip Tangen";
-    let gravity = -0.03;
+    /*let gravity = -0.03;
+    */
+    let gravity=0;
     let duration = 0.5;
     let speed = 0;
-    let minradius = 6.0;
-    let radius = 8;
+    //let minradius = 6.0;
+  /*  let radius = 8;
+*/
+  let minradius=5.0;
+  let radius=3.0;
 
     var message = new shape(W / 2, H / 2 + 50, fieldvalue);
 

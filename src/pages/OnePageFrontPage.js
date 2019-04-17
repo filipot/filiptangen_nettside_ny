@@ -59,11 +59,12 @@ class OnePageFrontPage extends Component {
                         <Col sm md={7} className="m-0 p-0 " >
                             <div className="centerVertical front-page-text ">
                                 <div className="centerVertical front-page-text-inner">
-                             <h1 className="dropdown-shadow" style={{"width":"auto", color:"#e6a340"}}>Filip Tangen</h1>
+                                    <Row className="justify-content-md-center-always">
+                             <h1 className="dropdown-shadow" style={{"width":"auto", color:"#e6a340"}}>Filip Tangen</h1></Row>
                                 <br/>
                                 <br/>
-
-                                    <HoverTextEffect/>
+                                    <Row className="justify-content-md-center-always">
+                                        <HoverTextEffect/></Row>
 
                                     <br/>
 

@@ -25,6 +25,7 @@ import framework7 from "../images/kunnskap/framework7.svg"
 import unity from "../images/kunnskap/unity.png"
 import blender from "../images/kunnskap/Blender.png"
 import linux from "../images/kunnskap/linux.png"
+import OpenGL from "../images/kunnskap/openGL.png"
 
 import webcollection from "../images/kunnskap/web-collection.png"
 
@@ -44,7 +45,14 @@ class OnePageKunnskap extends Component {
     }
 
 //TODO WRite the right links
+    //TODO Ha en wavey background som roterer når man scroller ned på siden :)))
 
+
+    /*<svg width="400" height="200" className="" style={{position:"relative", top:"250px"}}>
+                                <path d={"M0,100a200,100 0 1,0 400,0a200,100 0 1,0 -400,0"}
+                                      fill="#fff" stroke="#fff" strokeWidth="1"
+                                />
+                            </svg>*/
     render() {
         let h1 = 60;
         let h2 = 50;
@@ -54,17 +62,20 @@ class OnePageKunnskap extends Component {
                 <Row className="half-height m-0 p-0">
                     <Col md={4}></Col>
                     <Col md={8} style={{position:"relative", top:"-20%"}}>
-                        <div className="scale-on-hover  half-height">
-                            <OpenEffect className=" open-effect-right white-black scrollable" height="90%"
-                                        when={window.innerHeight * (0.33 + 0.25)} whenclose={window.innerHeight * (0.2)}>
-                                <Container>
-                                    <Row>
-                                        <div className="m-1 p-3">
+                        <div className="  half-height">
 
-                                            <h2>Min kunnskap</h2>
-                                        </div>
-                                    </Row>
-                                    <Row className="justify-content-md-center pb-4">
+
+                            <OpenEffect className=" "
+                                        when={window.innerHeight * (0.33 + 0.3)} whenclose={window.innerHeight * (0.2)}>
+                            <h2>Min kunnskap</h2>
+                                <br/>
+                            </OpenEffect>
+                            <OpenEffect className="golden-border scale-on-hover open-effect-kunnskap white-black rounded scrollable" height="350px"
+                                        when={window.innerHeight * (0.33 + 0.4)} whenclose={window.innerHeight * (0.2)}>
+
+                                <Container>
+
+                                    <Row className="justify-content-md-center pb-4 pt-4">
                                         <Col md={2}>
                                             <a href="https://getbootstrap.com/"  target="_blank">
                                                 <img className="scale-on-hover-big" src={cplusplus} height={h1}/>
@@ -153,19 +164,24 @@ class OnePageKunnskap extends Component {
                                     </Row>
 
                                     <Row className="justify-content-md-center ">
-                                        <Col md={4}>
+                                        <Col md={3}>
                                             <a href="https://getbootstrap.com/"  target="_blank">
                                                 <img className="scale-on-hover-big" src={unity} height={h2}/>
                                             </a>
                                         </Col>
-                                        <Col md={4}>
+                                        <Col md={3}>
                                             <a href="https://getbootstrap.com/"  target="_blank">
                                                 <img className="scale-on-hover-big" src={blender} height={h2}/>
                                             </a>
                                         </Col>
-                                        <Col md={4}>
+                                        <Col md={3}>
                                             <a href="https://getbootstrap.com/"  target="_blank">
                                                 <img className="scale-on-hover-big" src={linux} height={h2}/>
+                                            </a>
+                                        </Col>
+                                        <Col md={3}>
+                                            <a href="https://getbootstrap.com/"  target="_blank">
+                                                <img className="scale-on-hover-big" src={OpenGL} height={h2}/>
                                             </a>
                                         </Col>
 

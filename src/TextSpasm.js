@@ -39,7 +39,8 @@ class TextSpasm extends Component {
         "best practice is to use foo",
         "Stackoverflow <3",
         "hackerman",
-        "4 8 15 16 23 42"];
+        "4 8 15 16 23 42",
+        "dead: true"];
 
         this.state={text:text};
         this.state = {
@@ -47,7 +48,8 @@ class TextSpasm extends Component {
             width: window.innerWidth, height: window.innerHeight,
             text:text,
             amount : this.props.amount,
-            text_id: Math.floor(Math.random() * text.length)
+            text_id: Math.floor(Math.random() * text.length),
+            scrollY:0
         };
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
@@ -67,7 +69,7 @@ class TextSpasm extends Component {
 
         let rand3 = 0 + Math.random() * (window.innerWidth - 0);
         let rand4 = 0 + Math.random() * (window.innerHeight - 0);
-        return {x:rand3,y:rand4,dirX:rand1,dirY:rand2,text:this.state.text[text_id], width:0, height:0};
+        return {x:rand3,y:rand4,dirX:rand1,dirY:rand2,text:this.state.text[text_id],opacity:1, width:0, height:0, dead:false};
     }
 
     genList(){
@@ -106,6 +108,7 @@ class TextSpasm extends Component {
         window.removeEventListener('resize', this.updateWindowDimensions);
         window.removeEventListener("click", this.handleClick.bind(this));
     }
+
 
 
     updateWindowDimensions() {
@@ -169,27 +172,41 @@ class TextSpasm extends Component {
             let newdirY = list[i].dirY;
 
 
-            if (newX < 0 || newX > W-list[i].width) {
-                if (newX < 20) {
+
+
+            if (newX < 0 || newX > W-list[i].width*1.1) {
+                if (newX < 0) {
+                    newX = 0;
                     newdirX = Math.abs(newdirX);
                 } else {
+                    newX = W-list[i].width*1.1;
                     newdirX = -Math.abs(newdirX);
                 }
             }
-            if (newY < 0 || newY > H - list[i].height) {
+            if (newY < 0 || newY > H - list[i].height * 0.9) {
                 if (newY < 0) {
+                    newY = 0;
                     newdirY = Math.abs(newdirY);
                 } else {
+                    newY =  H - list[i].height * 0.9;
                     newdirY = -Math.abs(newdirY);
                 }
             }
 
+
             newX = newX + (newdirX * this.props.speed);
             newY = newY + (newdirY * this.props.speed);
+
+
             list[i].x = newX;
             list[i].y = newY;
             list[i].dirX = newdirX;
             list[i].dirY = newdirY;
+            list[i].opacity = list[i].opacity - 0.002;
+
+            if(list[i].opacity <= 0 && list[i].opacity > -50){
+                list[i].dead = true;
+            }
         }
         this.state.list = list;
         this.updateStyles();
@@ -206,6 +223,17 @@ class TextSpasm extends Component {
             if(element[i] === undefined){
                 continue;
             }
+            if(this.state.list[i].dead === true){
+                if(element[i].style.display === "none"){
+                    continue;
+                }
+                element[i].style = null;
+                element[i].style.display = "none";
+                continue;
+            }
+
+
+
 
             element[i].style.position = 'fixed';
             element[i].style.willChange = "transform";
@@ -216,8 +244,15 @@ class TextSpasm extends Component {
             element[i].style.cursor = "default";
             element[i].style.userSelect = "none";
             element[i].style.zIndex="-500";
+            element[i].style.opacity = this.state.list[i].opacity;
+
             this.state.list[i].width = element[i].offsetWidth;
             this.state.list[i].height = element[i].offsetHeight;
+            if(this.state.list[i].opacity < -999){
+                this.state.list[i].x -= this.state.list[i].width / 2;
+                this.state.list[i].opacity = 1;
+            }
+
             /*element[i].style.left = this.state.list[i].x + "px";
             element[i].style.top = this.state.list[i].y + "px";*/
             /*
@@ -229,17 +264,23 @@ class TextSpasm extends Component {
         }
     }
 
+
+
     handleClick(e){
+        for(let i = 0; i < 3; i ++){
+
+
         let x = e.clientX;
         let y = e.clientY;
         let list = this.state.list;
         let t = this.genElement();
-        t.x = x;
-        t.y = y;
-
+        t.x = x+ (t.dirX * 50);
+        t.y = y + (t.dirY * 100);
+        t.opacity = -999;
         list.push(t);
         let amount = this.state.amount + 1;
         this.setState({list:list,amount:amount});
+        }
     }
 
 
@@ -247,10 +288,13 @@ render() {
 
         return (
             <div style={{position:"fixed", height:"100vh", width:"100vw"}}  id="textspasm">
-                {this.state.list.map((item,i) =>
-                <div style={{display:"none"}} key={i}>
+                {this.state.list.map((item,i) => <div style={{display:"none"}} key={i}>
                     <p key={i}>{this.state.list[i].text}</p>
                 </div>
+
+
+
+
             )}
             </div>
 

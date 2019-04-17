@@ -45,7 +45,7 @@ class HoverTextEffect extends Component {
             if(!(child.tagName === "SPAN")){
                 continue;
             }
-            child.style.display = "inline-block";
+            child.style.display = "inline";
             child.addEventListener("mouseleave", (e)=>{
                 e.currentTarget.addEventListener("mouseenter", (e)=>{this.goOneLevelDown(e)});
             });
