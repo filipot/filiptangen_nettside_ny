@@ -17,6 +17,7 @@ import ImageEffects from '../components/ImageEffects'
 import linkedinImage from "../images/linkedin.png";
 import deviantImage from "../images/deviant.png";
 
+import ScrollAnimation from 'react-animate-on-scroll';
 import ReactPlayer from 'react-player'
 import react from "../images/kunnskap/react.png";
 import bootstrap from "../images/kunnskap/bootstrap.png";
@@ -24,18 +25,19 @@ import htmlcssjavascript from "../images/kunnskap/html-css-javascript.png";
 import php from "../images/kunnskap/php.png";
 import inmarket from "../images/inmarket.jpg";
 import bryggeforum from "../images/bryggeforum.jpg";
-import framework7 from "../images/kunnskap/framework7.svg";
+import framework7 from "../images/kunnskap/framework7.png";
 import node from "../images/kunnskap/node.png";
 import java from "../images/kunnskap/javatrans.png";
 import OnePageMomentum from "./OnePageMomentum";
-import antd from "../images/kunnskap/antd.svg";
+import antd from "../images/kunnskap/antd.png";
 import djangorest from "../images/kunnskap/djangorest.png";
 import django from "../images/kunnskap/django.png";
 import questline from "../images/questline.png";
 import githubImage from "../images/github.png";
+import chrome from "../images/kunnskap/chrome.png";
 
 import * as Scroll from 'react-scroll';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import {Link, Element, Events, animateScroll as scroll, scrollSpy, scroller} from 'react-scroll'
 import linux from "../images/kunnskap/linux.png";
 import python from "../images/kunnskap/python.png";
 import blender from "../images/kunnskap/Blender.png";
@@ -77,9 +79,9 @@ class OnePage extends Component {
             show_scroll_down_mouse = true;
         }
 
-        if (window.scrollY < first / 2 && display_name) {
+        if (window.scrollY < 4 && display_name) {
             display_name = false;
-        } else if (window.scrollY > first / 2 && !display_name) {
+        } else if (window.scrollY > 4 && !display_name) {
             display_name = true;
         }
 
@@ -94,20 +96,36 @@ class OnePage extends Component {
         let h2 = 10;
         let v2 = 10;
         if (this.state.show_scroll_down_mouse) {
-            return (<div className="chevron bottom shadow " style={{opacity: "1"}}>
-                <div className="chevron bottom shadow ">
-                    <svg width="60" height="60" className=""
-                         style={{position: "relative", bottom: "50px", right: "11px"}}>
-                        <path d={"M20.5,5 h" + h + " a" + h2 + "," + h2 + " 0 0 1 " + h2 + ", " + h2 +
-                        " v" + v + " a" + v2 + "," + v2 + " 0 0 1 " + -v2 + ", " + v2 +
-                        "h" + -h + " a" + h2 + "," + h2 + " 0 0 1 " + -h2 + ", " + -h2 +
-                        " v" + -v + " a" + v2 + "," + v2 + " 0 0 1 " + v2 + ", " + -v2 +
-                        "M21,10 v7 z"}
-                              fill="none" stroke="#FFF" strokeWidth="0.7"
-                        />
-                    </svg>
-                </div>
-            </div>);
+            return (
+
+                <div>
+                    <Link activeClass="active" to="erfaring" spy={true} smooth={true} offset={0} duration={500} style={{
+                        zIndex: "10000",
+                        width: "100px",
+                        height: "100px",
+                        position: "absolute",
+                        top: "90%",
+                        left: "46%"
+                    }}/>
+                    <div className="chevron bottom shadow " style={{opacity: "1"}}>
+                        <div className="chevron bottom shadow ">
+
+
+                            <svg width="60" height="60" className=""
+                                 style={{position: "relative", bottom: "50px", right: "11px"}}>
+                                <path d={"M20.5,5 h" + h + " a" + h2 + "," + h2 + " 0 0 1 " + h2 + ", " + h2 +
+                                " v" + v + " a" + v2 + "," + v2 + " 0 0 1 " + -v2 + ", " + v2 +
+                                "h" + -h + " a" + h2 + "," + h2 + " 0 0 1 " + -h2 + ", " + -h2 +
+                                " v" + -v + " a" + v2 + "," + v2 + " 0 0 1 " + v2 + ", " + -v2 +
+                                "M21,10 v7 z"}
+                                      fill="none" stroke="#FFF" strokeWidth="0.7"
+                                />
+                            </svg>
+
+
+                        </div>
+                    </div>
+                </div>);
         }
         return (<div></div>);
     }
@@ -221,100 +239,87 @@ class OnePage extends Component {
                     </div>
 
 
-
-
-
-
-
-
-
                     {this.scrollDownMouse()}
-
-
-
 
 
                     <OnePageFrontPage/>
 
 
-
                     <Container id="erfaring" className="p-0">
-                        <Row style={{"display": "block"}}>
+                        <Row className="mt-5 mb-5 pl-5 pb-5 d-block">
 
                             <Col>
-                            <Link activeClass="active" to="erfaring" spy={true} smooth={true} offset={0} duration={500} >
-                            <h1>
+                                <Link activeClass="active" to="erfaring" spy={true} smooth={true} offset={0}
+                                      duration={500}>
+                                    <h1>
 
-                                Erfaring
-                            </h1>
-                            <br/>
+                                        Erfaring
+                                    </h1>
+                                    <br/>
 
-                            <h2>
-                                2019
-                            </h2>
-                            </Link>
+                                    <h2>
+                                        2019
+                                    </h2>
+                                </Link>
                             </Col>
-
-
 
 
                         </Row>
 
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
 
-                        <Row className="m-1" >
+                        <Row className="mt-5 mb-5 pl-5 pb-5">
                             <Col md={8} className=" m-2d-block text-left black-white">
-                            <h4>
-                            Denne nettsiden <a href="https://getbootstrap.com/"  target="_blank">
-                                <img className="scale-on-hover-big" src={react} height={"40px" }/>
-                            </a> <a href="https://getbootstrap.com/"  target="_blank">
-                                <img className="scale-on-hover-big" src={bootstrap} height={"40px"}/></a></h4>
+                                <h4>
+                                    Denne nettsiden <a href="https://getbootstrap.com/" target="_blank">
+                                    <img className="scale-on-hover-big" src={react} height={"40px"}/>
+                                </a> <a href="https://getbootstrap.com/" target="_blank">
+                                    <img className="scale-on-hover-big" src={bootstrap} height={"40px"}/></a></h4>
                             </Col>
                         </Row>
 
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
+                        <Row className="mt-5 mb-5 pl-5 pb-5">
 
-                        <Row className="m-1" >
+                            <Col lg={7} md={4} className="p-0" style={{zIndex: "40000"}}>
+                                <ScrollAnimation animateIn="image-animation" duration={0.5}>
 
-                            <Col lg={7} md={4} className="p-0"  style={{zIndex:"40000"}}>
-                                <div className="">
-                                <a href="https://www.inmarket.as" target="_blank" className="m-0">
-                                    <img className=" golden-border scale-on-hover rounded" src={inmarket} width="100%" height="auto" />
-                                </a>
-                                </div>
+                                    <a href="https://www.inmarket.as" target="_blank" className="m-0 image-animation">
+                                        <ScrollAnimation animateIn="image-animation-cover" duration={0.5}>
+                                            <img className=" golden-border scale-on-hover rounded" src={inmarket}
+                                                 width="100%" height="auto"/>
+                                        </ScrollAnimation>
+
+
+                                    </a>
+                                </ScrollAnimation>
                             </Col>
                             <Col lg={5} md={7} className="pl-5  p-4 text-left black-white">
                                 <h4>
-                                    Inmarket  <a href="https://getbootstrap.com/" className="m-2"  target="_blank">
-                                    <img className="scale-on-hover-big" src={htmlcssjavascript} width="auto" height={"40px"}/>
+                                    Inmarket <a href="https://getbootstrap.com/" className="m-2" target="_blank">
+                                    <img className="scale-on-hover-big" src={htmlcssjavascript} width="auto"
+                                         height={"40px"}/>
                                 </a>
-                                    <a href="https://getbootstrap.com/"  target="_blank" className="m-2">
+                                    <a href="https://getbootstrap.com/" target="_blank" className="m-2">
                                         <img className="scale-on-hover-big" src={php} height={"40px"}/>
                                     </a></h4>
 
 
+                                <div className="pl-4 pt-3">
+                                    <p>Jeg er med i en startup bedrift som heter Inmarket. I bedriften er jobben min å
+                                        utvikle nettside og app.
+                                        For mer informasjon om bedriften se <a href="https://www.inmarket.as"
+                                                                               target="_blank">nettsiden</a>.
 
-                                <div  className="pl-4 pt-3">
-                                <p>Jeg er med i en startup bedrift som heter Inmarket. I bedriften er jobben min å utvikle nettside og app.
-                                    For mer informasjon om bedriften se <a  href="https://www.inmarket.as"  target="_blank">nettsiden</a>.
-
-                                </p>
-                                <p>Appen er under utvikling. Den blir bygget med disse verktøyene
-                                    <a href="https://getbootstrap.com/"  target="_blank" className="m-2">
-                                        <img className="scale-on-hover-big" src={react} height={"25px" }/>
-                                    </a>
-                                    <a href="https://getbootstrap.com/"  target="_blank"  className="m-2">
-                                        <img className="scale-on-hover-big" src={framework7} height={"25px"}/>
-                                    </a>
-                                    <a href="https://getbootstrap.com/"  target="_blank"  className="m-2">
-                                        <img className="scale-on-hover-big" src={node} height={"25px"}/>
-                                    </a></p>
+                                    </p>
+                                    <p>Appen er under utvikling. Den blir bygget med disse verktøyene
+                                        <a href="https://getbootstrap.com/" target="_blank" className="m-2">
+                                            <img className="scale-on-hover-big" src={react} height={"25px"}/>
+                                        </a>
+                                        <a href="https://getbootstrap.com/" target="_blank" className="m-2">
+                                            <img className="scale-on-hover-big" src={framework7} height={"25px"}/>
+                                        </a>
+                                        <a href="https://getbootstrap.com/" target="_blank" className="m-2">
+                                            <img className="scale-on-hover-big" src={node} height={"25px"}/>
+                                        </a></p>
 
 
                                 </div>
@@ -324,31 +329,32 @@ class OnePage extends Component {
 
                         </Row>
 
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
 
-                        <Row className="m-1" >
+                        <Row className="mt-5 mb-5 pl-5 pb-5">
 
                             <Col md={8} className=" p-4 text-left black-white">
 
 
                                 <h4>
-                                    Student assistant i faget <a href="https://www.ntnu.no/studier/emner/TDT4100#tab=omEmnet" target="_blank">TDT4100</a>  <a href="https://getbootstrap.com/"  target="_blank">
-                                    <img className="scale-on-hover-big" src={java} height={"50px"}/>
+                                    Student assistant i faget <a
+                                    href="https://www.ntnu.no/studier/emner/TDT4100#tab=omEmnet"
+                                    target="_blank">TDT4100</a> <a href="https://getbootstrap.com/" target="_blank" className="m-2">
+                                    <img className="scale-on-hover-big" src={java} height={"40px"}/>
                                 </a></h4>
 
                                 <div className="pl-4 pt-3">
 
                                     <p>
-                                        Faget handler om å lære objektorientert programmering og dette blir gjort via java.
-                                        I forbindelse med jobben har jeg også fått pedagogisk opplæring på <a href="" target="_blank">LAOS</a> kurset.
+                                        Faget handler om å lære objektorientert programmering og dette blir gjort via
+                                        java.
+                                        I forbindelse med jobben har jeg også fått pedagogisk opplæring på <a href=""
+                                                                                                              target="_blank">LAOS</a> kurset.
                                     </p>
                                     <p>
                                         GJENNOMFØRT LAOS. PEDAGOGISK OPPLÆRING
                                         Samtidig er jeg med på et masterprosjekt
-                                        Samtidig som jeg er studass er jeg med på et masterprosjekt som tester om det hadde
+                                        Samtidig som jeg er studass er jeg med på et masterprosjekt som tester om det
+                                        hadde
                                         vært bedre å lære java med selvlæring istedenfor med obligatoriske øvinger.
                                         Jeg har en gruppe med elever som istedenfor å få øvingsopplegget får de
                                         muntlige samtaler med meg hver 2 uke for å sjekke om de kan det de skal kunne.
@@ -361,56 +367,55 @@ class OnePage extends Component {
 
                         </Row>
 
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
 
-                        <Row className="m-1" >
+                        <Row className="mt-5 mb-5 pl-5 pb-5">
 
-                            <Col md={6} className="p-0"  style={{zIndex:"40000"}}>
+                            <Col md={6} className="p-0" style={{zIndex: "40000"}}>
                                 <OnePageMomentum/>
                             </Col>
                             <Col md={6} className=" pl-5 p-4 text-left black-white">
                                 <h4>
-                                    Momentum  <a href="https://getbootstrap.com/"  target="_blank" className="m-2">
-                                    <img className="scale-on-hover-big" src={react} height={"40px" }/>
-                                </a><a href="https://getbootstrap.com/"  target="_blank"  className="m-2">
+                                    Momentum <a href="https://getbootstrap.com/" target="_blank" className="m-2">
+                                    <img className="scale-on-hover-big" src={react} height={"40px"}/>
+                                </a><a href="https://getbootstrap.com/" target="_blank" className="m-2">
                                     <img className="scale-on-hover-big" src={antd} height={"40px"}/>
                                 </a>
-                                    <a href="https://getbootstrap.com/"  target="_blank" className="m-2">
+                                    <a href="https://getbootstrap.com/" target="_blank" className="m-2">
                                         <img className="scale-on-hover-big" src={django} height={"40px"}/>
                                     </a>
-                                    <a href="https://getbootstrap.com/"  target="_blank"  className="m-2">
-                                        <img className="scale-on-hover-big" style={{backgroundColor:"white"}} src={djangorest} height={"40px"}/>
+                                    <a href="https://getbootstrap.com/" target="_blank" className="m-2">
+                                        <img className="scale-on-hover-big" style={{backgroundColor: "white"}}
+                                             src={djangorest} height={"40px"}/>
                                     </a></h4>
 
 
+                                <div className="pl-4 pt-3">
+                                    Dette prosjektet er i forbindelse med.
 
-                                <div  className="pl-4 pt-3">
-                                        Dette prosjektet er i forbindelse med.
+                                    Frontend og backend (python django)
 
-                                        Frontend og backend (python django)
+                                    Momentum
+                                    Et sted for startups og arbeidssøkere for å finne hverandre.
+                                    Prosjekt i forbindelse med faget TDT4140.
                                 </div>
 
                             </Col>
 
 
-
-
                         </Row>
 
-                        <Row className="m-1" >
+                        <Row className="mt-5 mb-5 pl-5 pb-5">
 
                             <Col md={6} className=" p-4 text-left black-white">
-                                <h4>Linux  <a href="https://getbootstrap.com/"  target="_blank">
+                                <h4>Linux <a href="https://getbootstrap.com/" target="_blank" className="m-2">
                                     <img className="scale-on-hover-big" src={linux} height={"40px"}/>
                                 </a></h4>
 
                                 <div className="pl-4 pt-3">
 
                                     <p>
-                                        Linux har blitt min favoritt operativsystem. Det er den jeg bruker når jeg koder.
+                                        Linux har blitt min favoritt operativsystem. Det er den jeg bruker når jeg
+                                        koder.
                                         Spesielt liker jeg å bruke i3- wm.
 
                                     </p>
@@ -419,97 +424,123 @@ class OnePage extends Component {
                             </Col>
 
 
-
-                        </Row>
-
-
-
-
-                        <Row>
-                            <p>Med på startup Inmarket
-                                Laget </p>
-
-
-
-                        </Row>
-
-                        <Row>
-
-                            <p>Momentum
-                                Et sted for startups og arbeidssøkere for å finne hverandre.
-                                Prosjekt i forbindelse med faget TDT4140.</p>
-
-
-                        </Row>
-                        <Row>
-
-                            <p></p>
-
                         </Row>
 
                     </Container>
 
 
-
-
                     <Container className="p-0">
-                        <Row style={{"display": "block"}}>
+                        <Row className="mt-5 mb-5 pl-5 pb-5 d-block">
                             <h2>
                                 2018
                             </h2>
 
 
-
-
-
                         </Row>
-                        <Row className="m-1" >
-                        <Col md={6} className=" p-4 text-left black-white">
-                            <h4>The Scrummer Times <a href="https://getbootstrap.com/" className="m-2" target="_blank">
-                                <img className="scale-on-hover-big" src={python} height={"40px"}/>
-                            </a> <a href="https://getbootstrap.com/"  target="_blank" className="m-2">
-                                <img className="scale-on-hover-big" src={django} height={"40px"}/>
-                            </a></h4>
 
-                            <div className="pl-4 pt-3">
+                        <Row className="mt-5 mb-5 pl-5 pb-5">
+                            <Col md={8} className=" p-4 text-left black-white">
+                                <h4>Battle Against The Algorithm <a href="https://getbootstrap.com/" target="_blank"
+                                                                    className="m-2">
+                                    <img className="scale-on-hover-big " src={chrome} height={"40px"}/>
+                                </a></h4>
 
-                                <p>
-                                    The Scrummer Times
-                                    Min gruppe "The Scrummers" fikk karakteren A på dette prosjektet
-                                    Lære scrum prossessen.
+                                <div className="pl-4 pt-3">
 
-                                </p>
+                                    <p>
+                                        Youtube sine algoritmer er eksperter på å fange din oppmerksomhet med å vise foreslåtte videoer.
+                                        Denne chrome extensionen jeg har laget fjerner foreslåtte videoer fra youtube.
 
-                            </div>
-                        </Col>
+                                    </p>
+                                    <p> Den er dessverre ikke lagt ut på chrome nettmarked enda, men <a href="https://github.com/filipot/BattleAgainstTheAlgorithms" target="_blank">koden</a> ligger ute.</p>
+
+
+                                </div>
+                            </Col>
                         </Row>
-                        <Row className="m-1" >
+
+                        <Row className="mt-5 mb-5 pl-5 pb-5">
+
+                            <Col md={2}/>
+                            <Col md={5}>
+                                <div className="justify-content-center w-100">
+                                    <ReactPlayer className="golden-border scale-on-hover rounded "
+                                                 url='https://www.youtube.com/watch?v=vbnGkp7ZHNU'
+                                                 style={{margin: "0 auto"}} width={361} height={314}
+                                                 controls={true} volume={0} playing={true} playbackRate={2}/>
+                                </div>
+                            </Col>
+                            <Col md={3} className=" p-4 text-left black-white">
+                                <h4>Sjakk <a href="https://getbootstrap.com/" target="_blank" className="m-2">
+                                    <img className="scale-on-hover-big" src={java} height={"40px"}/>
+                                </a></h4>
+
+                                <div className="pl-4 pt-3">
+
+                                    <p>
+
+                                    </p>
+
+                                </div>
+                            </Col>
+                        </Row>
+                        <Row className="mt-5 mb-5 pl-5 pb-5">
+                            <Col md={6} className=" p-4 text-left black-white">
+                                <h4>The Scrummer Times <a href="https://getbootstrap.com/" className="m-2"
+                                                          target="_blank">
+                                    <img className="scale-on-hover-big" src={python} height={"40px"}/>
+                                </a> <a href="https://getbootstrap.com/" target="_blank" className="m-2">
+                                    <img className="scale-on-hover-big" src={django} height={"40px"}/>
+                                </a></h4>
+
+                                <div className="pl-4 pt-3">
+
+                                    <p>
+                                        I forbindelse med faget <a href="https://www.ntnu.no/studier/emner/IT1901#tab=omEmnet" target="_blank">Informatikk prosjektarbeid 1 </a>
+                                        laget jeg og fem andre en nettside som vi kalte for The Scrummer Times.
+                                        Django brukt som frontend og backend
+                                        The Scrummer Times
+                                        Min gruppe "The Scrummers" fikk karakteren A på dette prosjektet
+                                        Lære scrum prossessen.
+                                        Desverre har jeg ikke tilgang til prosjektet lengre ettersom faget er ferdig og
+                                        gitlab repositorien også.
+
+                                    </p>
+
+                                </div>
+                            </Col>
+                        </Row>
+                        <Row className="mt-5 mb-5 pl-5 pb-5">
 
                             <Col md={6}>
-                                <a href="https://online.ntnu.no/wiki/online/info/innsikt-og-interface/interessegrupper/questline/" target="_blank" className="m-0">
-                                    <img className=" golden-border scale-on-hover rounded" src={questline} width="75%" height="auto" />
+                                <a href="https://online.ntnu.no/wiki/online/info/innsikt-og-interface/interessegrupper/questline/"
+                                   target="_blank" className="m-0">
+                                    <img className=" golden-border scale-on-hover rounded" src={questline} width="75%"
+                                         height="auto"/>
                                 </a>
-                        </Col>
+                            </Col>
 
                             <Col md={6} className=" p-4 text-left black-white">
 
-                                <h4>Questline  <a href="https://getbootstrap.com/"  target="_blank">
+                                <h4>Questline <a href="https://getbootstrap.com/" target="_blank">
                                     <img className="scale-on-hover-big" src={blender} height={"40px"}/>
                                 </a></h4>
 
                                 <div className="pl-4 pt-3">
 
                                     <p>
-                                        Jeg lagde logo til interessegruppen Questline innen linjeforeningen Online, som er for de som er interesserte i Dungeons and Dragons.
+                                        Jeg lagde logo til interessegruppen Questline innen linjeforeningen Online, som
+                                        er for de som er interesserte i Dungeons and Dragons.
 
-                                        <a href="https://online.ntnu.no/wiki/online/info/innsikt-og-interface/interessegrupper/questline/"  target="_blank">Mer info om Questline</a>
+                                        <a href="https://online.ntnu.no/wiki/online/info/innsikt-og-interface/interessegrupper/questline/"
+                                           target="_blank">Mer info om Questline</a>
                                     </p>
 
                                 </div>
                             </Col>
                         </Row>
 
-                        <Row className="m-1" >
+                        <Row className="mt-5 mb-5 pl-5 pb-5">
 
                             <Col md={6} className=" p-4 text-left black-white">
                                 <h4>Caseoppgave på Grunderjakten 2018 </h4>
@@ -517,7 +548,8 @@ class OnePage extends Component {
                                 <div className="pl-4 pt-3">
 
                                     <p>
-                                        Linux har blitt min favoritt operativsystem. Det er den jeg bruker når jeg koder.
+                                        Linux har blitt min favoritt operativsystem. Det er den jeg bruker når jeg
+                                        koder.
                                         Spesielt liker jeg å bruke i3- wm.
 
                                     </p>
@@ -526,76 +558,37 @@ class OnePage extends Component {
                             </Col>
                         </Row>
 
-                        <Row className="m-1" >
-                            <Col md={6}>
-                                <div className="justify-content-center w-100">
-                                <ReactPlayer url='https://www.youtube.com/watch?v=vbnGkp7ZHNU' style={{margin:"0 auto"}}width={361} height={314}
-                                                     controls={true} volume={0} playing={false} playbackRate={2}/>
-                                </div>
-                            </Col>
-                            <Col md={6} className=" p-4 text-left black-white">
-                                <h4>Sjakk <a href="https://getbootstrap.com/"  target="_blank">
-                                    <img className="scale-on-hover-big" src={java} height={"40px"}/>
-                                </a> </h4>
-
-                                <div className="pl-4 pt-3">
-
-                                    <p>
-
-                                    </p>
-
-                                </div>
-                            </Col>
-                        </Row>
-
-                        <Row className="m-1" >
-                            <Col md={8} className=" p-4 text-left black-white">
-                                <h4>Battle Against The Algorithm <a href="https://getbootstrap.com/"  target="_blank">
-                                    <img className="scale-on-hover-big" src={java} height={"40px"}/>
-                                </a> </h4>
-
-                                <div className="pl-4 pt-3">
-
-                                    <p>
-                                        Jeg lagde en chrome extension for meg selv for å minske tidsbruken min på youtube.
-                                    </p>
-                                    <p>Den gjør to ting.</p>
-                                    <p>1. Når man går inn på youtube.com blir man redirected til youtube.com/feed/subscriptions</p>
-                                    <p>2. Når man ser på videoer vil de foreslåtte videoene til høyre bli fjernet.</p>
-
-                                </div>
-                            </Col>
-                        </Row>
 
                     </Container>
                     <Container className="p-0">
-                        <Row style={{"display": "block"}}>
+                        <Row className="mt-5 mb-5 pl-5 pb-5 d-block">
                             <h2>
                                 2017 og eldre
                             </h2>
 
 
-
-
-
                         </Row>
-                        <Row className="m-1" >
-                            <Col lg={6} md={6} className="p-0"  style={{zIndex:"40000"}}>
+                        <Row className="mt-5 mb-5 pl-5 pb-5">
+                            <Col lg={6} md={6} className="p-0" style={{zIndex: "40000"}}>
                                 <div className="">
-                                    <a href="https://folk.ntnu.no/sanderbl/webtek/Prosjekt/nettside/index.html" target="_blank" className="m-0">
-                                        <img className=" golden-border scale-on-hover rounded" src={bryggeforum} width="100%" height="auto" />
+                                    <a href="https://folk.ntnu.no/sanderbl/webtek/Prosjekt/nettside/index.html"
+                                       target="_blank" className="m-0">
+                                        <img className=" golden-border scale-on-hover rounded" src={bryggeforum}
+                                             width="100%" height="auto"/>
                                     </a>
                                 </div>
                             </Col>
                             <Col md={6} className=" p-4 text-left black-white">
-                                <h4>Gløshaugen Bryggeforum<a href="https://getbootstrap.com/" className="m-2" target="_blank">
+                                <h4>Gløshaugen Bryggeforum<a href="https://getbootstrap.com/" className="m-2"
+                                                             target="_blank">
                                     <img className="scale-on-hover-big" src={htmlcssjavascript} height={"40px"}/>
-                                </a> </h4>
+                                </a></h4>
 
                                 <div className="pl-4 pt-3">
 
                                     <p>
-                                        Gløshaugen bryggeforum ønsket en nettside hvor folk kunne finne informasjon om dem.
+                                        Gløshaugen bryggeforum ønsket en nettside hvor folk kunne finne informasjon om
+                                        dem.
                                         Laget med en gruppe på 4. Det var bare lov å bruke rein HTML, CSS og Javascript.
                                         Gruppen fikk karakter A på dette prosjektet
                                         IT2805 - Webteknologi. Se nettsiden her.
@@ -609,68 +602,7 @@ class OnePage extends Component {
                         </Row>
                     </Container>
 
-                    <Container>
-                        <h2 >2018</h2>
 
-                        <Row className="m-1" >
-
-                            <Col md={6} className=" p-4 text-left black-white">
-                                <h4>Linux  <a href="https://getbootstrap.com/"  target="_blank">
-                                    <img className="scale-on-hover-big" src={linux} height={"40px"}/>
-                                </a></h4>
-
-                                <div className="pl-4 pt-3">
-
-                                    <p>
-                                        Linux har blitt min favoritt operativsystem. Det er den jeg bruker når jeg koder.
-                                        Spesielt liker jeg å bruke i3- wm.
-
-                                    </p>
-
-                                </div>
-                            </Col>
-
-
-
-                        </Row>
-
-                        <p> The Scrummer Times
-                            Et sted for startups og arbeidssøkere for å finne hverandre.
-                            Prosjekt i forbindelse med faget IT1901.
-                            Min gruppe "The Scrummers" fikk karakteren A på dette prosjektet
-                            Lære scrum prossessen.</p>
-
-
-                        <p>Grunderjakten. Jeg hadde en pitch på 1 min hvor vi vant. Spørsmålet var om hvordan
-                            VR kan bli brukt for å nå fn bærekraftsmål.
-                            Ideen våres var å bruke VR får å få donerere og pengegreier.
-                            Se hvordan pengene som du donerere faktisk gjør en forskjell.
-                            Se lykkelige barn som får lære. Skoler som blir bygget.
-                            Kanskje ha en spesifikk barn som du gir penger til.</p>
-
-                        <p>Lagde logo for linjeforeningen sin Dungeons and Dragons lag :)</p>
-
-                        <p>Lagde sjakk i java og FXML for grafikk</p>
-                        <p>Lagde en chrome extension som fjerner youtube suggested videoer. Ikke publisert på chrome
-                            shop enda.
-                            Gjør slik at man blir redirected fra hovedsiden (med suggested videos) og fjerner suggested
-                            videoer fra sidepanelet når man ser på videoer</p>
-
-                        <ReactPlayer url='https://www.youtube.com/watch?v=vbnGkp7ZHNU' width={361} height={314}
-                                     controls={true} volume={0} playing={false} playbackRate={2}/>
-                    </Container>
-
-
-                    <Container>
-                        <h2 >2018</h2>
-
-                    </Container>
-
-                    <div className="white-black full-height" style={{position: "relative"}}>
-                        <h2 className="white-black align-left" style={{textAlign: "left"}}>2017</h2>
-
-
-                    </div>
 
 
                     <div className="white-black full-height" style={{position: "relative"}}>

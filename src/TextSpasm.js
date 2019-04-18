@@ -275,7 +275,7 @@ class TextSpasm extends Component {
         let list = this.state.list;
         let t = this.genElement();
         t.x = x+ (t.dirX * 50);
-        t.y = y + (t.dirY * 100);
+        t.y = y + (t.dirY * 50);
         t.opacity = -999;
         list.push(t);
         let amount = this.state.amount + 1;
