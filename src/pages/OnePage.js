@@ -485,9 +485,14 @@ class OnePage extends Component {
                         </Row>
                         <Row className="m-1" >
 
-                            <Col md={6}><img src={questline} width={"75%"}/></Col>
+                            <Col md={6}>
+                                <a href="https://online.ntnu.no/wiki/online/info/innsikt-og-interface/interessegrupper/questline/" target="_blank" className="m-0">
+                                    <img className=" golden-border scale-on-hover rounded" src={questline} width="75%" height="auto" />
+                                </a>
+                        </Col>
 
                             <Col md={6} className=" p-4 text-left black-white">
+
                                 <h4>Questline  <a href="https://getbootstrap.com/"  target="_blank">
                                     <img className="scale-on-hover-big" src={blender} height={"40px"}/>
                                 </a></h4>
@@ -495,9 +500,9 @@ class OnePage extends Component {
                                 <div className="pl-4 pt-3">
 
                                     <p>
-                                        Linux har blitt min favoritt operativsystem. Det er den jeg bruker når jeg koder.
-                                        Spesielt liker jeg å bruke i3- wm.
+                                        Jeg lagde logo til interessegruppen Questline innen linjeforeningen Online, som er for de som er interesserte i Dungeons and Dragons.
 
+                                        <a href="https://online.ntnu.no/wiki/online/info/innsikt-og-interface/interessegrupper/questline/"  target="_blank">Mer info om Questline</a>
                                     </p>
 
                                 </div>
@@ -544,16 +549,19 @@ class OnePage extends Component {
                         </Row>
 
                         <Row className="m-1" >
-                            <Col md={6} className=" p-4 text-left black-white">
-                                <h4>BattleAgainstTheAlgorithm <a href="https://getbootstrap.com/"  target="_blank">
+                            <Col md={8} className=" p-4 text-left black-white">
+                                <h4>Battle Against The Algorithm <a href="https://getbootstrap.com/"  target="_blank">
                                     <img className="scale-on-hover-big" src={java} height={"40px"}/>
                                 </a> </h4>
 
                                 <div className="pl-4 pt-3">
 
                                     <p>
-
+                                        Jeg lagde en chrome extension for meg selv for å minske tidsbruken min på youtube.
                                     </p>
+                                    <p>Den gjør to ting.</p>
+                                    <p>1. Når man går inn på youtube.com blir man redirected til youtube.com/feed/subscriptions</p>
+                                    <p>2. Når man ser på videoer vil de foreslåtte videoene til høyre bli fjernet.</p>
 
                                 </div>
                             </Col>
@@ -563,7 +571,7 @@ class OnePage extends Component {
                     <Container className="p-0">
                         <Row style={{"display": "block"}}>
                             <h2>
-                                2013 til 2017
+                                2017 og eldre
                             </h2>
 
 
