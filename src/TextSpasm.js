@@ -202,7 +202,7 @@ class TextSpasm extends Component {
             list[i].y = newY;
             list[i].dirX = newdirX;
             list[i].dirY = newdirY;
-            list[i].opacity = list[i].opacity - 0.002;
+            list[i].opacity = list[i].opacity - 0.005;
 
             if(list[i].opacity <= 0 && list[i].opacity > -50){
                 list[i].dead = true;

@@ -58,16 +58,17 @@ class OnePageKunnskap extends Component {
         let h2 = 50;
         return (
 
-            <Container className="centerHorizontal ">
-                <Row className="half-height m-0 p-0">
-                    <Col md={4}></Col>
-                    <Col md={8} style={{position:"relative", top:"-20%"}}>
+            <Container  id="kunnskap" className="centerHorizontal ">
+                <Row className="m-0 p-0" style={{height:"700px"}}>
+                    <Col md={2}></Col>
+                    <Col md={8} style={{position:"relative"}}>
                         <div className="  half-height">
 
 
                             <OpenEffect className=" "
-                                        when={window.innerHeight * (0.33 + 0.3)} whenclose={window.innerHeight * (0.2)}>
-                            <h2>Min kunnskap</h2>
+                                        when={window.innerHeight * (0.33)} whenclose={window.innerHeight * (0.2)}>
+                            <h1>Min kunnskap</h1>
+                                <br/>
                                 <br/>
                             </OpenEffect>
                             <OpenEffect className="golden-border scale-on-hover open-effect-kunnskap white-black rounded scrollable" height="350px"
@@ -191,6 +192,7 @@ class OnePageKunnskap extends Component {
                             </OpenEffect>
                         </div>
                     </Col>
+                    <Col md={2}></Col>
                 </Row>
             </Container>
 

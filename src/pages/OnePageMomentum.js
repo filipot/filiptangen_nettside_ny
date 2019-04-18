@@ -50,9 +50,11 @@ class OnePageMomentum extends React.Component {
 
             <Carousel
                 activeIndex={index}
+                onSelect={this.handleSelect}
 
                 onClick={this.click}
                 className="scale-on-hover"
+                defaultActiveIndex={0}
             >
                 <Carousel.Item>
                     <img
@@ -61,7 +63,7 @@ class OnePageMomentum extends React.Component {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <p style={{color:"black"}}>Liste over bedriftene i systemet</p>
+                        <h4 style={{color:"black"}}>Liste over bedriftene i systemet</h4>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -72,7 +74,7 @@ class OnePageMomentum extends React.Component {
                     />
 
                     <Carousel.Caption>
-                        <p style={{color:"black"}}>Bedriften og stillingene den har</p>
+                        <h4 style={{color:"black"}}>Bedriften og stillingene den har</h4>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -83,7 +85,7 @@ class OnePageMomentum extends React.Component {
                     />
 
                     <Carousel.Caption>
-                        <p style={{color:"black"}}>Bedrifteier sin profil</p>
+                        <h4 style={{color:"black"}}>Bedrifteier sin profil</h4>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -94,7 +96,7 @@ class OnePageMomentum extends React.Component {
                     />
 
                     <Carousel.Caption>
-                        <p style={{color:"black"}}>Redigering av bedrift, med et selvlaget tagsystem</p>
+                        <h4 style={{color:"black"}}>Redigering av bedrift, med et selvlaget tagsystem</h4>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -105,7 +107,7 @@ class OnePageMomentum extends React.Component {
                     />
 
                     <Carousel.Caption>
-                        <p style={{color:"black"}}>Redigering av profil</p>
+                        <h4 style={{color:"black"}}>Redigering av profil</h4>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

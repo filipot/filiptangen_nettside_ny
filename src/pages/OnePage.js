@@ -23,12 +23,22 @@ import bootstrap from "../images/kunnskap/bootstrap.png";
 import htmlcssjavascript from "../images/kunnskap/html-css-javascript.png";
 import php from "../images/kunnskap/php.png";
 import inmarket from "../images/inmarket.jpg";
+import bryggeforum from "../images/bryggeforum.jpg";
 import framework7 from "../images/kunnskap/framework7.svg";
 import node from "../images/kunnskap/node.png";
 import java from "../images/kunnskap/javatrans.png";
 import OnePageMomentum from "./OnePageMomentum";
 import antd from "../images/kunnskap/antd.svg";
 import djangorest from "../images/kunnskap/djangorest.png";
+import django from "../images/kunnskap/django.png";
+import questline from "../images/questline.png";
+import githubImage from "../images/github.png";
+
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import linux from "../images/kunnskap/linux.png";
+import python from "../images/kunnskap/python.png";
+import blender from "../images/kunnskap/Blender.png";
 
 
 class OnePage extends Component {
@@ -54,7 +64,7 @@ class OnePage extends Component {
         let wh = window.innerHeight;
         let front = wh * 0;
         let first = wh * 1;
-        let second = wh * 1 * 1.33;
+        let second = first + 550;
 
 
         let show_scroll_down_mouse = this.state.show_scroll_down_mouse;
@@ -149,23 +159,8 @@ class OnePage extends Component {
                             <li className="dot"></li>
                         </ul>*/
 
-    render() {
-        return (
-            <div style={{overflowX: "hidden", width: "100vw"}}>
 
-
-                <div>
-                    <div>
-                        <TextSpasm amount={1} speed={2} style={{width: "97%"}}/>
-                    </div>
-
-
-                    {this.scrollDownMouse()}
-
-                    {this.state.display_name ? <FilipTangen/> : <div></div>}
-                    <OnePageFrontPage/>
-
-                    <Container className="centerHorizontal ">
+    /* <Container className="centerHorizontal ">
 
                         <Row className="third-height m-0 p-0">
 
@@ -180,10 +175,10 @@ class OnePage extends Component {
                                             </div>
                                         </Row>
                                         <Row className="pl-5 text-left d-block">
-
-                                            <p><strong>Bosted:</strong> Trondheim og Bergen</p>
                                             <p><strong>Studie:</strong> Bachelor i Informatikk på NTNU</p>
                                             <p><strong>Alder:</strong> 20 år</p>
+                                            <p><strong>Telefon:</strong>91334562</p>
+                                            <p><strong>Epost:</strong>filiptangen1998@live.com</p>
 
 
                                             <br/>
@@ -198,12 +193,58 @@ class OnePage extends Component {
 
                         </Row>
                     </Container>
+                     <ul>
 
-                    <Kunnskap/>
+                            <li className="m-1 mb-3">Bachelor i Informatikk ved NTNU i Trondheim
+                            </li>
+                            <li className="m-1 mb-3">20 år gammel
+                            </li>
+                            <li className="m-1 mb-3">91334562
+                            </li>
+                            <li className="m-1 mb-3">filiptangen1998@live.com
+                            </li>
 
-                    <Container className="p-0">
+                        </ul>
+
+
+
+                    <Kunnskap/>*/
+
+    render() {
+        return (
+            <div style={{overflowX: "hidden", width: "100vw"}}>
+
+                {this.state.display_name ? <FilipTangen/> : <div></div>}
+                <div className="container-padding-md">
+                    <div className="d-md-block d-lg-block d-sm-block d-none">
+                        <TextSpasm amount={1} speed={2} style={{width: "97%"}}/>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    {this.scrollDownMouse()}
+
+
+
+
+
+                    <OnePageFrontPage/>
+
+
+
+                    <Container id="erfaring" className="p-0">
                         <Row style={{"display": "block"}}>
+
+                            <Col>
+                            <Link activeClass="active" to="erfaring" spy={true} smooth={true} offset={0} duration={500} >
                             <h1>
+
                                 Erfaring
                             </h1>
                             <br/>
@@ -211,6 +252,8 @@ class OnePage extends Component {
                             <h2>
                                 2019
                             </h2>
+                            </Link>
+                            </Col>
 
 
 
@@ -239,15 +282,14 @@ class OnePage extends Component {
 
                         <Row className="m-1" >
 
-                            <Col lg={6} md={4} className="p-0"  style={{zIndex:"40000"}}>
+                            <Col lg={7} md={4} className="p-0"  style={{zIndex:"40000"}}>
                                 <div className="">
                                 <a href="https://www.inmarket.as" target="_blank" className="m-0">
                                     <img className=" golden-border scale-on-hover rounded" src={inmarket} width="100%" height="auto" />
                                 </a>
                                 </div>
                             </Col>
-                            <Col lg={1} md={0} className="d-md-none d-lg-block"></Col>
-                            <Col lg={5} md={7} className=" p-4 text-left black-white">
+                            <Col lg={5} md={7} className="pl-5  p-4 text-left black-white">
                                 <h4>
                                     Inmarket  <a href="https://getbootstrap.com/" className="m-2"  target="_blank">
                                     <img className="scale-on-hover-big" src={htmlcssjavascript} width="auto" height={"40px"}/>
@@ -300,9 +342,11 @@ class OnePage extends Component {
                                 <div className="pl-4 pt-3">
 
                                     <p>
-                                        Jeg er studass i objektorientert programmering med java.
+                                        Faget handler om å lære objektorientert programmering og dette blir gjort via java.
+                                        I forbindelse med jobben har jeg også fått pedagogisk opplæring på <a href="" target="_blank">LAOS</a> kurset.
                                     </p>
                                     <p>
+                                        GJENNOMFØRT LAOS. PEDAGOGISK OPPLÆRING
                                         Samtidig er jeg med på et masterprosjekt
                                         Samtidig som jeg er studass er jeg med på et masterprosjekt som tester om det hadde
                                         vært bedre å lære java med selvlæring istedenfor med obligatoriske øvinger.
@@ -327,14 +371,16 @@ class OnePage extends Component {
                             <Col md={6} className="p-0"  style={{zIndex:"40000"}}>
                                 <OnePageMomentum/>
                             </Col>
-                            <Col md={1}></Col>
-                            <Col md={5} className=" p-4 text-left black-white">
+                            <Col md={6} className=" pl-5 p-4 text-left black-white">
                                 <h4>
                                     Momentum  <a href="https://getbootstrap.com/"  target="_blank" className="m-2">
                                     <img className="scale-on-hover-big" src={react} height={"40px" }/>
                                 </a><a href="https://getbootstrap.com/"  target="_blank"  className="m-2">
                                     <img className="scale-on-hover-big" src={antd} height={"40px"}/>
                                 </a>
+                                    <a href="https://getbootstrap.com/"  target="_blank" className="m-2">
+                                        <img className="scale-on-hover-big" src={django} height={"40px"}/>
+                                    </a>
                                     <a href="https://getbootstrap.com/"  target="_blank"  className="m-2">
                                         <img className="scale-on-hover-big" style={{backgroundColor:"white"}} src={djangorest} height={"40px"}/>
                                     </a></h4>
@@ -348,6 +394,30 @@ class OnePage extends Component {
                                 </div>
 
                             </Col>
+
+
+
+
+                        </Row>
+
+                        <Row className="m-1" >
+
+                            <Col md={6} className=" p-4 text-left black-white">
+                                <h4>Linux  <a href="https://getbootstrap.com/"  target="_blank">
+                                    <img className="scale-on-hover-big" src={linux} height={"40px"}/>
+                                </a></h4>
+
+                                <div className="pl-4 pt-3">
+
+                                    <p>
+                                        Linux har blitt min favoritt operativsystem. Det er den jeg bruker når jeg koder.
+                                        Spesielt liker jeg å bruke i3- wm.
+
+                                    </p>
+
+                                </div>
+                            </Col>
+
 
 
                         </Row>
@@ -391,12 +461,171 @@ class OnePage extends Component {
 
 
 
+
+                        </Row>
+                        <Row className="m-1" >
+                        <Col md={6} className=" p-4 text-left black-white">
+                            <h4>The Scrummer Times <a href="https://getbootstrap.com/" className="m-2" target="_blank">
+                                <img className="scale-on-hover-big" src={python} height={"40px"}/>
+                            </a> <a href="https://getbootstrap.com/"  target="_blank" className="m-2">
+                                <img className="scale-on-hover-big" src={django} height={"40px"}/>
+                            </a></h4>
+
+                            <div className="pl-4 pt-3">
+
+                                <p>
+                                    The Scrummer Times
+                                    Min gruppe "The Scrummers" fikk karakteren A på dette prosjektet
+                                    Lære scrum prossessen.
+
+                                </p>
+
+                            </div>
+                        </Col>
+                        </Row>
+                        <Row className="m-1" >
+
+                            <Col md={6}><img src={questline} width={"75%"}/></Col>
+
+                            <Col md={6} className=" p-4 text-left black-white">
+                                <h4>Questline  <a href="https://getbootstrap.com/"  target="_blank">
+                                    <img className="scale-on-hover-big" src={blender} height={"40px"}/>
+                                </a></h4>
+
+                                <div className="pl-4 pt-3">
+
+                                    <p>
+                                        Linux har blitt min favoritt operativsystem. Det er den jeg bruker når jeg koder.
+                                        Spesielt liker jeg å bruke i3- wm.
+
+                                    </p>
+
+                                </div>
+                            </Col>
+                        </Row>
+
+                        <Row className="m-1" >
+
+                            <Col md={6} className=" p-4 text-left black-white">
+                                <h4>Caseoppgave på Grunderjakten 2018 </h4>
+
+                                <div className="pl-4 pt-3">
+
+                                    <p>
+                                        Linux har blitt min favoritt operativsystem. Det er den jeg bruker når jeg koder.
+                                        Spesielt liker jeg å bruke i3- wm.
+
+                                    </p>
+
+                                </div>
+                            </Col>
+                        </Row>
+
+                        <Row className="m-1" >
+                            <Col md={6}>
+                                <div className="justify-content-center w-100">
+                                <ReactPlayer url='https://www.youtube.com/watch?v=vbnGkp7ZHNU' style={{margin:"0 auto"}}width={361} height={314}
+                                                     controls={true} volume={0} playing={false} playbackRate={2}/>
+                                </div>
+                            </Col>
+                            <Col md={6} className=" p-4 text-left black-white">
+                                <h4>Sjakk <a href="https://getbootstrap.com/"  target="_blank">
+                                    <img className="scale-on-hover-big" src={java} height={"40px"}/>
+                                </a> </h4>
+
+                                <div className="pl-4 pt-3">
+
+                                    <p>
+
+                                    </p>
+
+                                </div>
+                            </Col>
+                        </Row>
+
+                        <Row className="m-1" >
+                            <Col md={6} className=" p-4 text-left black-white">
+                                <h4>BattleAgainstTheAlgorithm <a href="https://getbootstrap.com/"  target="_blank">
+                                    <img className="scale-on-hover-big" src={java} height={"40px"}/>
+                                </a> </h4>
+
+                                <div className="pl-4 pt-3">
+
+                                    <p>
+
+                                    </p>
+
+                                </div>
+                            </Col>
+                        </Row>
+
+                    </Container>
+                    <Container className="p-0">
+                        <Row style={{"display": "block"}}>
+                            <h2>
+                                2013 til 2017
+                            </h2>
+
+
+
+
+
+                        </Row>
+                        <Row className="m-1" >
+                            <Col lg={6} md={6} className="p-0"  style={{zIndex:"40000"}}>
+                                <div className="">
+                                    <a href="https://folk.ntnu.no/sanderbl/webtek/Prosjekt/nettside/index.html" target="_blank" className="m-0">
+                                        <img className=" golden-border scale-on-hover rounded" src={bryggeforum} width="100%" height="auto" />
+                                    </a>
+                                </div>
+                            </Col>
+                            <Col md={6} className=" p-4 text-left black-white">
+                                <h4>Gløshaugen Bryggeforum<a href="https://getbootstrap.com/" className="m-2" target="_blank">
+                                    <img className="scale-on-hover-big" src={htmlcssjavascript} height={"40px"}/>
+                                </a> </h4>
+
+                                <div className="pl-4 pt-3">
+
+                                    <p>
+                                        Gløshaugen bryggeforum ønsket en nettside hvor folk kunne finne informasjon om dem.
+                                        Laget med en gruppe på 4. Det var bare lov å bruke rein HTML, CSS og Javascript.
+                                        Gruppen fikk karakter A på dette prosjektet
+                                        IT2805 - Webteknologi. Se nettsiden her.
+
+                                        Trykk på ølglasset :)
+
+                                    </p>
+
+                                </div>
+                            </Col>
                         </Row>
                     </Container>
 
+                    <Container>
+                        <h2 >2018</h2>
 
-                    <div className=" full-height" style={{position: "relative"}}>
-                        <h2 className=" align-left" style={{textAlign: "left"}}>2018</h2>
+                        <Row className="m-1" >
+
+                            <Col md={6} className=" p-4 text-left black-white">
+                                <h4>Linux  <a href="https://getbootstrap.com/"  target="_blank">
+                                    <img className="scale-on-hover-big" src={linux} height={"40px"}/>
+                                </a></h4>
+
+                                <div className="pl-4 pt-3">
+
+                                    <p>
+                                        Linux har blitt min favoritt operativsystem. Det er den jeg bruker når jeg koder.
+                                        Spesielt liker jeg å bruke i3- wm.
+
+                                    </p>
+
+                                </div>
+                            </Col>
+
+
+
+                        </Row>
+
                         <p> The Scrummer Times
                             Et sted for startups og arbeidssøkere for å finne hverandre.
                             Prosjekt i forbindelse med faget IT1901.
@@ -411,6 +640,8 @@ class OnePage extends Component {
                             Se lykkelige barn som får lære. Skoler som blir bygget.
                             Kanskje ha en spesifikk barn som du gir penger til.</p>
 
+                        <p>Lagde logo for linjeforeningen sin Dungeons and Dragons lag :)</p>
+
                         <p>Lagde sjakk i java og FXML for grafikk</p>
                         <p>Lagde en chrome extension som fjerner youtube suggested videoer. Ikke publisert på chrome
                             shop enda.
@@ -419,7 +650,13 @@ class OnePage extends Component {
 
                         <ReactPlayer url='https://www.youtube.com/watch?v=vbnGkp7ZHNU' width={361} height={314}
                                      controls={true} volume={0} playing={false} playbackRate={2}/>
-                    </div>
+                    </Container>
+
+
+                    <Container>
+                        <h2 >2018</h2>
+
+                    </Container>
 
                     <div className="white-black full-height" style={{position: "relative"}}>
                         <h2 className="white-black align-left" style={{textAlign: "left"}}>2017</h2>
