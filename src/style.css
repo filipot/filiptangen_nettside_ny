@@ -292,6 +292,8 @@ a:hover{
 
 }
 
+.pointer-on-hover:hover { cursor: pointer; }
+
 .image-animation{
     animation: ani-image ease-in both;
     background-color: #FFF;

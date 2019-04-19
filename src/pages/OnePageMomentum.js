@@ -32,6 +32,8 @@ class OnePageMomentum extends React.Component {
     }
 
     click(e) {
+        e.preventDefault();
+        e.stopPropagation();
         let s = this.state.index;
         s ++;
         if(s > 5)
@@ -55,6 +57,8 @@ class OnePageMomentum extends React.Component {
                 onClick={this.click}
                 className="scale-on-hover"
                 defaultActiveIndex={0}
+                className="rounded golden-border scale-on-hover pointer-on-hover"
+                controls={false}
             >
                 <Carousel.Item>
                     <img
@@ -62,8 +66,9 @@ class OnePageMomentum extends React.Component {
                         src={momentum1}
                         alt="First slide"
                     />
-                    <Carousel.Caption>
-                        <h4 style={{color:"black"}}>Liste over bedriftene i systemet</h4>
+                    <Carousel.Caption  style={{color:"white", position:"relative", left:"0px"}}>
+
+                        <h4 className="m-2">Liste over bedriftene i systemet</h4>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -72,9 +77,9 @@ class OnePageMomentum extends React.Component {
                         src={momentum2}
                         alt="Third slide"
                     />
+                    <Carousel.Caption  style={{color:"white", position:"relative", left:"0px"}}>
 
-                    <Carousel.Caption>
-                        <h4 style={{color:"black"}}>Bedriften og stillingene den har</h4>
+                        <h4 className="m-2">Bedriften og stillingene den har</h4>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -84,9 +89,11 @@ class OnePageMomentum extends React.Component {
                         alt="Third slide"
                     />
 
-                    <Carousel.Caption>
-                        <h4 style={{color:"black"}}>Bedrifteier sin profil</h4>
+                    <Carousel.Caption  style={{color:"white", position:"relative", left:"0px"}}>
+
+                        <h4 className="m-2">Bedrifteier sin profil</h4>
                     </Carousel.Caption>
+
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
@@ -95,8 +102,9 @@ class OnePageMomentum extends React.Component {
                         alt="Third slide"
                     />
 
-                    <Carousel.Caption>
-                        <h4 style={{color:"black"}}>Redigering av bedrift, med et selvlaget tagsystem</h4>
+                    <Carousel.Caption  style={{color:"white", position:"relative", left:"0px"}}>
+
+                        <h4 className="m-2">Redigering av bedrift, med et selvlaget tagsystem</h4>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -106,8 +114,10 @@ class OnePageMomentum extends React.Component {
                         alt="Third slide"
                     />
 
-                    <Carousel.Caption>
-                        <h4 style={{color:"black"}}>Redigering av profil</h4>
+
+                    <Carousel.Caption  style={{color:"white", position:"relative", left:"0px"}}>
+
+                        <h4 className="m-2">Redigering av profil</h4>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
