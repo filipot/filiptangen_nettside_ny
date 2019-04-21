@@ -1,16 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d924655-75e5-48b0-97f9-dcd192685922" name="Default Changelist" comment="Im good at commit messages. Oh well it is only me who edits2">
-      <change afterPath="$PROJECT_DIR$/src/pages/OnePageLowpoly.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/OnePageSDL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/OnePageUnity.js" afterDir="false" />
+    <list default="true" id="2d924655-75e5-48b0-97f9-dcd192685922" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HoverTextEffect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HoverTextEffect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/OnePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/OnePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/OnePageMomentum.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/OnePageMomentum.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/filiptangen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/filiptangen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextSpasm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/background2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chessyoutubevideo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/BNI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilde.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilde2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142629.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142629.jpg.xmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142629_01.jpg.xmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142629_02.jpg.xmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142632.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142632.jpg.xmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142633.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142633.jpg.xmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142636.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142636.jpg.xmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142641.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142641.jpg.xmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142642.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142642.jpg.xmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142644.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142644.jpg.xmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142645.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142645.jpg.xmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142647.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142647.jpg.xmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142650.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142650.jpg.xmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142652.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142652.jpg.xmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142655.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/IMG_20190413_142655.jpg.xmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/darktable_exported/IMG_20190413_142629.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/darktable_exported/IMG_20190413_142629_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/darktable_exported/IMG_20190413_142629_01_edit.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/darktable_exported/IMG_20190413_142629_edit.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/darktable_exported/IMG_20190413_142650.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/darktable_exported/IMG_20190413_142650_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/darktable_exported/IMG_20190413_142650_01_edit.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/darktable_exported/IMG_20190413_142655.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bilder/darktable_exported/IMG_20190413_142655_edit.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/deer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/envelope.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/envelope2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/envelope3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/icons8-contacts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/icons8-work-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/waxstamp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Backend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Ekstra.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Erfaring.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/FrontPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Frontend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/NextPageButton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/PageShell.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Personlighet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/RedirectButton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/RedirectButtonsmall.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +78,7 @@
     <favorites_list name="filiptangen_nettside" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45255002">
+    <splitter split-orientation="horizontal" split-proportion="0.6507424">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -35,10 +90,10 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/pages/OnePageFrontPage.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="874">
+                <state relative-caret-position="2461">
                   <caret line="107" column="66" selection-start-line="107" selection-start-column="66" selection-end-line="107" selection-end-column="66" />
                   <folding>
                     <element signature="e#1#40#0" expanded="true" />
@@ -71,11 +126,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pages/OnePage.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="274" column="40" lean-forward="true" selection-start-line="274" selection-start-column="40" selection-end-line="274" selection-end-column="40" />
+                <state relative-caret-position="4255">
+                  <caret line="275" column="44" lean-forward="true" selection-start-line="275" selection-start-column="44" selection-end-line="275" selection-end-column="44" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -111,10 +166,29 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/TextSpasm.js">
+            <entry file="file://$PROJECT_DIR$/src/components/ImageEffects.js">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Resources">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1104">
-                  <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="60" />
+                <state relative-caret-position="-8">
+                  <caret line="216" column="30" selection-start-line="216" selection-start-column="30" selection-end-line="216" selection-end-column="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/ParticleText.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="669">
+                  <caret line="315" column="5" lean-forward="true" selection-start-line="315" selection-start-column="5" selection-end-line="315" selection-end-column="5" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -123,18 +197,17 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pages/OnePageKunnskap.js">
+            <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3404">
-                  <caret line="190" selection-start-line="190" selection-end-line="190" />
+                <state>
                   <folding>
-                    <element signature="e#0#39#0" expanded="true" />
+                    <element signature="n#!!doc" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pages/filiptangen.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="717">
@@ -147,24 +220,18 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pages/OnePageSDL.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="299">
-                  <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
+            <entry file="file://$PROJECT_DIR$/src/images/deviant.png">
+              <provider selected="true" editor-type-id="images" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pages/OnePageUnity.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
-                  <caret line="86" column="51" lean-forward="true" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="83" />
-                </state>
-              </provider>
+            <entry file="file://$PROJECT_DIR$/src/images/github.png">
+              <provider selected="true" editor-type-id="images" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/images/bryggeforum.jpg">
+              <provider selected="true" editor-type-id="images" />
             </entry>
           </file>
         </leaf>
@@ -181,7 +248,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>html-css-java</find>
       <find>htmlcssjava</find>
       <find>react</find>
       <find>php</find>
@@ -211,6 +277,7 @@
       <find>reactPlayer</find>
       <find>lowpoly</find>
       <find>low</find>
+      <find>2019</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -237,7 +304,6 @@
         <option value="$USER_HOME$/small-deer.2a0425af.svg" />
         <option value="$PROJECT_DIR$/src/images/envelope.svg" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/filip" />
         <option value="$PROJECT_DIR$/src/images/deer.svg" />
         <option value="$PROJECT_DIR$/src/TextSpasm.css" />
         <option value="$PROJECT_DIR$/src/styles/fadeInSlideOut.css" />
@@ -270,6 +336,7 @@
         <option value="$PROJECT_DIR$/src/pages/OnePageSDL.js" />
         <option value="$PROJECT_DIR$/src/pages/OnePage.js" />
         <option value="$PROJECT_DIR$/src/pages/filiptangen.js" />
+        <option value="$PROJECT_DIR$/src/filip" />
       </list>
     </option>
   </component>
@@ -297,24 +364,6 @@
               <item name="filiptangen_nettside" type="b2602c69:ProjectViewProjectNode" />
               <item name="filiptangen_nettside" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="filiptangen_nettside" type="b2602c69:ProjectViewProjectNode" />
-              <item name="filiptangen_nettside" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="filiptangen_nettside" type="b2602c69:ProjectViewProjectNode" />
-              <item name="filiptangen_nettside" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="filiptangen_nettside" type="b2602c69:ProjectViewProjectNode" />
-              <item name="filiptangen_nettside" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="filiptangen_nettside" type="b2602c69:ProjectViewProjectNode" />
@@ -382,7 +431,7 @@
     <frame x="-2" y="-18" width="1924" height="1100" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49925706" visible="true" weight="0.17342582" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49925706" visible="true" weight="0.2945571" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -442,116 +491,10 @@
     <MESSAGE value="Mer info" />
     <MESSAGE value="Im good at commit messages. Oh well it is only me who edits" />
     <MESSAGE value="Im good at commit messages. Oh well it is only me who edits2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Im good at commit messages. Oh well it is only me who edits2" />
+    <MESSAGE value="Ferdig med alle punktene" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ferdig med alle punktene" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/images/bilder/darktable_exported/IMG_20190413_142629.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/bilder/darktable_exported/IMG_20190413_142650.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ImageEffects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/bilder/darktable_exported/IMG_20190413_142629_edit.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/bilder/darktable_exported/IMG_20190413_142655_edit.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/bilder/darktable_exported/IMG_20190413_142650_01_edit.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/NextPageButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="41" selection-start-column="41" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Personlighet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/PageShell.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/RedirectButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Erfaring.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Ekstra.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/bilder/darktable_exported/IMG_20190413_142650_01.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/kunnskap/bootstrap.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/kunnskap/framework7.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Backend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Frontend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -559,23 +502,6 @@
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5520">
-          <caret line="251" column="28" selection-start-line="251" selection-start-column="28" selection-end-line="259" selection-end-column="34" />
-          <folding>
-            <element signature="e#312#370#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5152">
-          <caret line="224" selection-start-line="224" selection-end-line="224" />
         </state>
       </provider>
     </entry>
@@ -594,9 +520,6 @@
           <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessyoutubevideo.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/images/kunnskap/html-css-javascript.png">
       <provider selected="true" editor-type-id="images" />
@@ -639,16 +562,6 @@
     <entry file="file://$PROJECT_DIR$/src/images/momentum5.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ParticleText.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="315" column="5" lean-forward="true" selection-start-line="315" selection-start-column="5" selection-end-line="315" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/images/kunnskap/unity.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -689,29 +602,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="556" column="28" selection-start-line="556" selection-start-column="28" selection-end-line="556" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/OnePageMomentum.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="83" column="39" lean-forward="true" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/OnePageFrontPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="107" column="66" selection-start-line="107" selection-start-column="66" selection-end-line="107" selection-end-column="66" />
-          <folding>
-            <element signature="e#1#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -733,15 +629,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/OnePage.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/Layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="274" column="40" lean-forward="true" selection-start-line="274" selection-start-column="40" selection-end-line="274" selection-end-column="40" />
+        <state relative-caret-position="5658">
+          <caret line="251" column="28" selection-start-line="251" selection-start-column="28" selection-end-line="259" selection-end-column="34" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#312#370#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/icons8-contacts.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/icons8-work-96.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/filiptangen.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -750,6 +652,110 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/deer.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/BNI.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/bilde.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/bilde2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/bryggeforum.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/deviant.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/bilder/IMG_20190413_142629.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/bilder/IMG_20190413_142632.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/OnePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4255">
+          <caret line="275" column="44" lean-forward="true" selection-start-line="275" selection-start-column="44" selection-end-line="275" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/OnePageFrontPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2461">
+          <caret line="107" column="66" selection-start-line="107" selection-start-column="66" selection-end-line="107" selection-end-column="66" />
+          <folding>
+            <element signature="e#1#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chessyoutubevideo.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/filip">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/github.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logo.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ParticleText.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="315" column="5" lean-forward="true" selection-start-line="315" selection-start-column="5" selection-end-line="315" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TextSpasm.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="556" column="28" selection-start-line="556" selection-start-column="28" selection-end-line="556" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ImageEffects.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="216" column="30" selection-start-line="216" selection-start-column="30" selection-end-line="216" selection-end-column="30" />
         </state>
       </provider>
     </entry>
