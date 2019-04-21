@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d924655-75e5-48b0-97f9-dcd192685922" name="Default Changelist" comment="">
+    <list default="true" id="2d924655-75e5-48b0-97f9-dcd192685922" name="Default Changelist" comment="Im good at commit messages. Oh well it is only me who edits2">
+      <change afterPath="$PROJECT_DIR$/src/pages/OnePageLowpoly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/OnePageSDL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/OnePageUnity.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TextSpasm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextSpasm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/kunnskap/javatrans.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/kunnskap/javatrans.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HoverTextEffect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HoverTextEffect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/OnePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/OnePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/OnePageMomentum.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/OnePageMomentum.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/filiptangen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/filiptangen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
     </list>
@@ -22,14 +23,14 @@
     <favorites_list name="filiptangen_nettside" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6277372">
+    <splitter split-orientation="horizontal" split-proportion="0.45255002">
       <split-first>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="342" lean-forward="true" selection-start-line="342" selection-end-line="342" />
+                <state relative-caret-position="700">
+                  <caret line="345" column="8" selection-start-line="345" selection-start-column="8" selection-end-line="345" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -37,7 +38,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pages/OnePageFrontPage.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="283">
+                <state relative-caret-position="874">
                   <caret line="107" column="66" selection-start-line="107" selection-start-column="66" selection-end-line="107" selection-end-column="66" />
                   <folding>
                     <element signature="e#1#40#0" expanded="true" />
@@ -49,8 +50,20 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pages/OnePageMomentum.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="23">
-                  <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+                <state relative-caret-position="578">
+                  <caret line="83" column="39" lean-forward="true" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
+                  <folding>
+                    <element signature="e#0#39#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pages/OnePageLowpoly.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="391">
+                  <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -61,11 +74,38 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/pages/OnePage.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="503" column="62" lean-forward="true" selection-start-line="503" selection-start-column="62" selection-end-line="503" selection-end-column="62" />
+                <state relative-caret-position="221">
+                  <caret line="274" column="40" lean-forward="true" selection-start-line="274" selection-start-column="40" selection-end-line="274" selection-end-column="40" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/HoverTextEffect.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="451">
+                  <caret line="128" column="62" lean-forward="true" selection-start-line="128" selection-start-column="62" selection-end-line="128" selection-end-column="62" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/images/kunnskap/unity.png">
+              <provider selected="true" editor-type-id="images" />
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="97">
+                  <caret line="556" column="28" selection-start-line="556" selection-start-column="28" selection-end-line="556" selection-end-column="28" />
                 </state>
               </provider>
             </entry>
@@ -73,8 +113,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/TextSpasm.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="421">
-                  <caret line="277" column="30" selection-start-line="277" selection-start-column="30" selection-end-line="277" selection-end-column="30" />
+                <state relative-caret-position="1104">
+                  <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="60" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -82,24 +122,35 @@
               </provider>
             </entry>
           </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/style.css">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pages/OnePageKunnskap.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="490">
-                  <caret line="315" column="33" selection-start-line="315" selection-start-column="33" selection-end-line="315" selection-end-column="33" />
+                <state relative-caret-position="3404">
+                  <caret line="190" selection-start-line="190" selection-end-line="190" />
+                  <folding>
+                    <element signature="e#0#39#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/pages/filiptangen.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="717">
+                  <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pages/OnePageKunnskap.js">
+            <entry file="file://$PROJECT_DIR$/src/pages/OnePageSDL.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1725">
-                  <caret line="104" column="45" selection-start-line="104" selection-start-column="45" selection-end-line="104" selection-end-column="45" />
+                <state relative-caret-position="299">
+                  <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -108,13 +159,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pages/filiptangen.js">
+            <entry file="file://$PROJECT_DIR$/src/pages/OnePageUnity.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="276">
-                  <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="510">
+                  <caret line="86" column="51" lean-forward="true" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="83" />
                 </state>
               </provider>
             </entry>
@@ -133,36 +181,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>s</find>
-      <find>shadow</find>
-      <find>genElement</find>
-      <find>black-white</find>
-      <find>script</find>
-      <find>slide-up</find>
+      <find>html-css-java</find>
+      <find>htmlcssjava</find>
+      <find>react</find>
+      <find>php</find>
+      <find>framework7</find>
       <find>node</find>
-      <find>width</find>
-      <find>console.log</find>
-      <find>om meg</find>
-      <find>text</find>
-      <find>informatikk</find>
-      <find>erfaring</find>
-      <find>python</find>
-      <find>grunderja</find>
-      <find>questline</find>
-      <find>grunder</find>
-      <find>scrummer tim</find>
-      <find>framework</find>
-      <find>inmarket</find>
-      <find>scrollanimation</find>
-      <find>scrollani</find>
-      <find>chrome</find>
-      <find>filiptangen</find>
-      <find>color</find>
+      <find>java</find>
+      <find>antd</find>
+      <find>django</find>
+      <find>djangorest</find>
+      <find>blender</find>
+      <find>image-animation</find>
+      <find>cplusplus</find>
+      <find>studass</find>
+      <find>htmlcss</find>
+      <find>lowpoly kunst</find>
+      <find>opengl</find>
       <find>image-ani</find>
       <find>handle</find>
-      <find>linux</find>
-      <find>java</find>
-      <find>ba</find>
+      <find>hover</find>
+      <find>rand</find>
+      <find>onepagelowpoly</find>
+      <find>player</find>
+      <find>andre</find>
+      <find>erfaring</find>
+      <find>denne net</find>
+      <find>onepage</find>
+      <find>reactPlayer</find>
+      <find>lowpoly</find>
+      <find>low</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -171,8 +219,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/stuff/Subscribe.js" />
-        <option value="$PROJECT_DIR$/src/stuff/ThankYou.js" />
         <option value="$PROJECT_DIR$/src/pages/ThankYou.js" />
         <option value="$PROJECT_DIR$/src/pages/Subscribe.js" />
         <option value="$PROJECT_DIR$/src/pages/Ekstra.js" />
@@ -211,30 +257,34 @@
         <option value="$PROJECT_DIR$/src/components/ImageEffects.js" />
         <option value="$PROJECT_DIR$/src/components/openeffect.js" />
         <option value="$PROJECT_DIR$/src/chessyoutubevideo.js" />
-        <option value="$PROJECT_DIR$/src/components/HoverTextEffect.js" />
         <option value="$PROJECT_DIR$/src/ParticleText.js" />
         <option value="$PROJECT_DIR$/Resources" />
-        <option value="$PROJECT_DIR$/src/pages/OnePageMomentum.js" />
         <option value="$PROJECT_DIR$/src/pages/OnePageKunnskap.js" />
         <option value="$PROJECT_DIR$/src/pages/OnePageFrontPage.js" />
-        <option value="$PROJECT_DIR$/src/pages/filiptangen.js" />
         <option value="$PROJECT_DIR$/src/TextSpasm.js" />
         <option value="$PROJECT_DIR$/src/style.css" />
+        <option value="$PROJECT_DIR$/src/pages/OnePageMomentum.js" />
+        <option value="$PROJECT_DIR$/src/pages/OnePageLowpoly.js" />
+        <option value="$PROJECT_DIR$/src/components/HoverTextEffect.js" />
+        <option value="$PROJECT_DIR$/src/pages/OnePageUnity.js" />
+        <option value="$PROJECT_DIR$/src/pages/OnePageSDL.js" />
         <option value="$PROJECT_DIR$/src/pages/OnePage.js" />
+        <option value="$PROJECT_DIR$/src/pages/filiptangen.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="-2" />
-    <option name="width" value="1922" />
-    <option name="height" value="1083" />
+    <option name="x" value="-2" />
+    <option name="y" value="-18" />
+    <option name="width" value="1924" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -276,7 +326,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -330,10 +379,10 @@
     </configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-2" width="1922" height="1083" extended-state="0" />
+    <frame x="-2" y="-18" width="1924" height="1100" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49925706" visible="true" weight="0.18643162" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49925706" visible="true" weight="0.17342582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -346,7 +395,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.21283422" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.14374353" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -391,21 +440,11 @@
     <MESSAGE value="endringer" />
     <MESSAGE value="lengre" />
     <MESSAGE value="Mer info" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mer info" />
+    <MESSAGE value="Im good at commit messages. Oh well it is only me who edits" />
+    <MESSAGE value="Im good at commit messages. Oh well it is only me who edits2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Im good at commit messages. Oh well it is only me who edits2" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/images/bilder/IMG_20190413_142632.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/bilder/IMG_20190413_142629.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/bilder/IMG_20190413_142629.jpg.xmp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/bilder/IMG_20190413_142650.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/images/bilder/darktable_exported/IMG_20190413_142629.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -559,13 +598,6 @@
     <entry file="file://$PROJECT_DIR$/src/chessyoutubevideo.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/HoverTextEffect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1127">
-          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/images/kunnskap/html-css-javascript.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -617,56 +649,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/OnePageMomentum.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/OnePageKunnskap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="104" column="45" selection-start-line="104" selection-start-column="45" selection-end-line="104" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/images/kunnskap/unity.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TextSpasm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="277" column="30" selection-start-line="277" selection-start-column="30" selection-end-line="277" selection-end-column="30" />
+        <state relative-caret-position="1104">
+          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="60" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/filiptangen.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/OnePageKunnskap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+        <state relative-caret-position="3404">
+          <caret line="190" selection-start-line="190" selection-end-line="190" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/HoverTextEffect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="128" column="62" lean-forward="true" selection-start-line="128" selection-start-column="62" selection-end-line="128" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/OnePageLowpoly.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="342" lean-forward="true" selection-start-line="342" selection-end-line="342" />
+        <state relative-caret-position="97">
+          <caret line="556" column="28" selection-start-line="556" selection-start-column="28" selection-end-line="556" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/OnePageMomentum.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="83" column="39" lean-forward="true" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/OnePageFrontPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
+        <state relative-caret-position="874">
           <caret line="107" column="66" selection-start-line="107" selection-start-column="66" selection-end-line="107" selection-end-column="66" />
           <folding>
             <element signature="e#1#40#0" expanded="true" />
@@ -674,12 +716,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/OnePage.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/OnePageUnity.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="503" column="62" lean-forward="true" selection-start-line="503" selection-start-column="62" selection-end-line="503" selection-end-column="62" />
+        <state relative-caret-position="510">
+          <caret line="86" column="51" lean-forward="true" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/OnePageSDL.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/OnePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="274" column="40" lean-forward="true" selection-start-line="274" selection-start-column="40" selection-end-line="274" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/filiptangen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -21,6 +21,7 @@ class OnePageMomentum extends React.Component {
         this.state = {
             index: 0,
             direction: null,
+            finished:true,
         };
     }
 
@@ -34,13 +35,18 @@ class OnePageMomentum extends React.Component {
     click(e) {
         e.preventDefault();
         e.stopPropagation();
+        if(this.state.finished === false)
+            return;
         let s = this.state.index;
         s ++;
-        if(s > 5)
+        if(s > 4)
             s = 0;
+
+        setTimeout(()=>{this.setState({finished:true})},700);
 
         this.setState({
             index: s,
+            finished:false,
         });
     }
 
@@ -59,6 +65,7 @@ class OnePageMomentum extends React.Component {
                 defaultActiveIndex={0}
                 className="rounded golden-border scale-on-hover pointer-on-hover"
                 controls={false}
+                interval={null}
             >
                 <Carousel.Item>
                     <img

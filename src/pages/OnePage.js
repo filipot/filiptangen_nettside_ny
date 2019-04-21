@@ -6,6 +6,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import OnePageFrontPage from './OnePageFrontPage'
+import OnePageLowpoly from './OnePageLowpoly'
+import OnePageSDL from './OnePageSDL'
+import OnePageUnity from './OnePageUnity'
 import OpenEffect from '../components/openeffect'
 
 import FilipTangen from './filiptangen'
@@ -265,7 +268,7 @@ class OnePage extends Component {
                                       duration={500}>
                                     <h1>
 
-                                        Erfaring
+                                        Min erfaring
                                     </h1>
                                     <br/>
 
@@ -282,7 +285,7 @@ class OnePage extends Component {
                         <Row className="mt-5 mb-5 pl-5 pb-5">
                             <Col md={8} className=" m-2d-block text-left black-white">
                                 <h4>
-                                    Denne nettsiden <a href="https://reactjs.org/" target="_blank">
+                                    www.filiptangen.com <a href="https://reactjs.org/" target="_blank">
                                     <img className="scale-on-hover-big" src={react} height={"40px"}/>
                                 </a> <a href="https://getbootstrap.com/" target="_blank">
                                     <img className="scale-on-hover-big" src={bootstrap} height={"40px"}/></a></h4>
@@ -396,11 +399,11 @@ class OnePage extends Component {
                                 <div className="pl-4 pt-3">
 <p>
                                     I forbindelse med faget <a href="https://www.ntnu.no/studier/emner/TDT4140" target="_blank">Programvareutvikling </a>
-                                     laget jeg og fem andre en nettside med navnet Momentum.
+                                     laget fem andre og meg en nettside med navnet Momentum.
                                     Nettsiden er et møtested for startup-bedrifter og arbeidssøkere.
 </p>
                                     <p>
-                                        Ta en titt på slideshowet hvis du ønsker et inblikk på hvordan siden så ut som.
+                                        Ta en titt på slideshowet hvis du ønsker et innblikk på hvordan siden så ut som.
                                     </p>
                                 </div>
 
@@ -434,7 +437,7 @@ class OnePage extends Component {
 
 
                     <Container className="p-0">
-                        <Row className="mt-5 mb-5 pl-5 pb-5 d-block">
+                        <Row id = "2018" className="mt-5 mb-5 pl-5 pb-5 d-block">
                             <h2>
                                 2018
                             </h2>
@@ -471,7 +474,7 @@ class OnePage extends Component {
                                     <ReactPlayer className="golden-border scale-on-hover rounded "
                                                  url='https://www.youtube.com/watch?v=vbnGkp7ZHNU'
                                                  style={{margin: "0 auto"}} width={361*1.2} height={314*1.2}
-                                                 controls={true} volume={0} playing={true} playbackRate={2}/>
+                                                 controls={false} volume={0} playing={true} playbackRate={2} loop={true}/>
                                 </div>
                             </Col>
                             <Col md={1}/>
@@ -502,7 +505,7 @@ class OnePage extends Component {
 
                                     <p>
                                         I forbindelse med faget <a href="https://www.ntnu.no/studier/emner/IT1901#tab=omEmnet" target="_blank">Informatikk prosjektarbeid 1 </a>
-                                        laget jeg og fem andre en nettside som vi kalte for The Scrummer Times.
+                                        laget fem andre og meg en nettside som vi kalte for The Scrummer Times.
                                         Det var en nettside med mange forskjellige brukertyper som uregistrert bruker, registrert bruker, forfatter, redaktør, daglig leder og administrator.
                                         Prosjektet ble gjennomført ved å ha Django som backend og frontend.
                                         Gruppen fikk karakter A.
@@ -567,7 +570,7 @@ class OnePage extends Component {
 
                     </Container>
                     <Container className="p-0">
-                        <Row className="mt-5 mb-5 pl-5 pb-5 d-block">
+                        <Row id="resten" className="mt-5 mb-5 pl-5 pb-5 d-block">
                             <h2>
                                 Resten
                             </h2>
@@ -618,35 +621,28 @@ class OnePage extends Component {
                                 </a></h4>
 
                                 <div className="pl-4 pt-3">
-                                    <h1>UNITY</h1>
-                                    <p>https://www.youtube.com/watch?v=9mtCk-Z-JGA</p>
-                                    <p>https://www.youtube.com/watch?v=3l9lpXn-MtI</p>
-                                    <p>https://www.youtube.com/watch?v=c1PZHPf5eC0</p>
-                                    <p>https://www.youtube.com/watch?v=3l9lpXn-MtI&feature=youtu.be</p>
-                                    <p>https://www.youtube.com/watch?v=2fBnItQcILA</p>
                                     <p>
-                                        I forbindelse med faget <a href="https://www.ntnu.no/studier/emner/IT2805#tab=omEmnet" target="_blank">webteknologi </a>
-                                        laget jeg og tre andre en nettside for Gløshaugen bryggeforum for å informere om organisasjonen.
-                                        I faget var det bare lov å bruke rein HTML, CSS og Javascript. Gruppen fikk karakter A på prosjektet.
-                                    </p>
+                                        Da jeg var rundt 15 år ble jeg svært interessert i spillmotoren Unity.</p>
                                     <p>
-                                        Se <a href="https://folk.ntnu.no/sanderbl/webtek/Prosjekt/nettside/index.html" target="_blank">nettsiden</a> her. Trykk på ølglasset :)
+                                        Blant annet laget jeg et pikselert spill hvor man kan ødelegge alt som man ser,
+                                        og grafikken er generert via kode.</p>
+                                    <p>
+                                        Også lagde jeg en "voxel-engine" hvor man kan lage terreng som flyter og
+                                        som man kan ødelegge, dette fikk jeg til ved å bruke <a href="https://en.wikipedia.org/wiki/Marching_cubes" target="_blank">marching cubes algoritmen</a>
+
                                     </p>
 
                                 </div>
                             </Col>
                             <Col lg={6} md={6} className="p-0" style={{zIndex: "40000"}}>
-                                <div className="">
-                                    <a href="https://folk.ntnu.no/sanderbl/webtek/Prosjekt/nettside/index.html"
-                                       target="_blank" className="m-0">
-                                        <img className=" golden-border scale-on-hover rounded" src={bryggeforum}
-                                             width="100%" height="auto"/>
-                                    </a>
-                                </div>
+                                <OnePageUnity/>
                             </Col>
                         </Row>
                         <Row className="mt-5 mb-5 pl-5 pb-5">
-                            <Col md={6} className=" p-4 text-left black-white">
+                            <Col lg={8} md={8} className="p-0" style={{zIndex: "40000"}}>
+                                <OnePageLowpoly/>
+                            </Col>
+                            <Col md={4} className=" p-4 text-left black-white">
                                 <h4>Lowpoly kunst<a href="https://www.blender.org/" target="_blank" className="m-2">
                                     <img className="scale-on-hover-big" src={blender} height={"40px"}/>
                                 </a></h4>
@@ -654,39 +650,19 @@ class OnePage extends Component {
                                 <div className="pl-4 pt-3">
 
                                     <p>
-                                        I forbindelse med faget <a href="https://www.ntnu.no/studier/emner/IT2805#tab=omEmnet" target="_blank">webteknologi </a>
-                                        laget jeg og tre andre en nettside for Gløshaugen bryggeforum for å informere om organisasjonen.
-                                        I faget var det bare lov å bruke rein HTML, CSS og Javascript. Gruppen fikk karakter A på prosjektet.
-                                    </p>
-                                    <p>
-                                        Se <a href="https://folk.ntnu.no/sanderbl/webtek/Prosjekt/nettside/index.html" target="_blank">nettsiden</a> her. Trykk på ølglasset :)
+                                        Da jeg var 14 år gammel ble jeg fasinert over <a href="https://www.sessions.edu/notes-on-design/whats-the-deal-with-low-poly-art/" target="_blank">lowpoly-kunststil</a>.
+                                        Jeg eksperimenterte mye rundt i blender og laget disse bildene.
                                     </p>
 
                                 </div>
                             </Col>
-                            <Col lg={6} md={6} className="p-0" style={{zIndex: "40000"}}>
-                                <div className="">
-                                    <a href="https://folk.ntnu.no/sanderbl/webtek/Prosjekt/nettside/index.html"
-                                       target="_blank" className="m-0">
-                                        <img className=" golden-border scale-on-hover rounded" src={bryggeforum}
-                                             width="100%" height="auto"/>
-                                    </a>
-                                </div>
-                            </Col>
+
 
                         </Row>
 
 
                         <Row className="mt-5 mb-5 pl-5 pb-5">
-                            <Col lg={6} md={6} className="p-0" style={{zIndex: "40000"}}>
-                                <div className="">
-                                    <a href="https://folk.ntnu.no/sanderbl/webtek/Prosjekt/nettside/index.html"
-                                       target="_blank" className="m-0">
-                                        <img className=" golden-border scale-on-hover rounded" src={bryggeforum}
-                                             width="100%" height="auto"/>
-                                    </a>
-                                </div>
-                            </Col>
+
                             <Col md={6} className=" p-4 text-left black-white">
                                 <h4>Prøvde å lage spill <a href="http://www.cplusplus.com/"  target="_blank" className="m-2">
                                     <img className="scale-on-hover-big" src={cplusplus} height={"40px"}/>
@@ -696,19 +672,14 @@ class OnePage extends Component {
 
                                 <div className="pl-4 pt-3">
 
-                                    <h1>C++, SDL + OPENGL</h1>
-                                    <p>https://www.youtube.com/watch?v=O4mURyMJby4</p> (speed 2x plz)
-                                    <p>https://www.youtube.com/watch?v=0ntGd08KxNA</p>
-                                    <p>
-                                        I forbindelse med faget <a href="https://www.ntnu.no/studier/emner/IT2805#tab=omEmnet" target="_blank">webteknologi </a>
-                                        laget jeg og tre andre en nettside for Gløshaugen bryggeforum for å informere om organisasjonen.
-                                        I faget var det bare lov å bruke rein HTML, CSS og Javascript. Gruppen fikk karakter A på prosjektet.
-                                    </p>
-                                    <p>
-                                        Se <a href="https://folk.ntnu.no/sanderbl/webtek/Prosjekt/nettside/index.html" target="_blank">nettsiden</a> her. Trykk på ølglasset :)
-                                    </p>
+                                   <p>Noe av det første jeg begynte med var å prøve å lage spill med bruk av C++, SDL og OpenGL</p>
+                                    <p>Da laget jeg et spill hvor det var mulig å redigere på nivåene.</p>
+                                    <p>Også prøvde jeg å lage et zombie spill</p>
 
                                 </div>
+                            </Col>
+                            <Col lg={6} md={6} className="p-0" style={{zIndex: "40000"}}>
+                                <OnePageSDL/>
                             </Col>
                         </Row>
 

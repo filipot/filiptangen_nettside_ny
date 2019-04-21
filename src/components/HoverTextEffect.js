@@ -2,13 +2,29 @@
 import React, {Component} from 'react';
 
 class HoverTextEffect extends Component {
+
     constructor(props){
         super(props);
-
     }
 
     componentDidMount() {
+        setTimeout(()=>{this.shake()},2000);
     }
+
+    shake(){
+            let elements = document.getElementsByClassName("shakeable");
+            let rand = Math.floor(Math.random() * elements.length);
+            let e = elements.item(rand);
+            if(e === null){
+                return;
+            }
+            let oldClassName = e.className;
+            e.className += " shake";
+            setTimeout(()=>{
+                e.className = oldClassName;
+            }, 300);
+    }
+
     componentWillUnmount(){
     }
 
@@ -45,14 +61,20 @@ class HoverTextEffect extends Component {
             if(!(child.tagName === "SPAN")){
                 continue;
             }
-            child.style.display = "inline";
+            child.style.display = "inline-block";
             child.addEventListener("mouseleave", (e)=>{
                 e.currentTarget.addEventListener("mouseenter", (e)=>{this.goOneLevelDown(e)});
             });
 
             child.addEventListener("click", (e)=>{this.goOneLevelDown(e)});
+
             child.className="hover-effect-text m-1";
+            if(child.id !== "last"){
+                child.className += " shakeable";
+            }
         }
+
+        setTimeout(()=>{this.shake()},1000);
 
         element.parentNode.removeChild(element);
     }
@@ -81,7 +103,7 @@ class HoverTextEffect extends Component {
 
 
 
-                <span className="hover-effect-text m-1"  onMouseEnter={this.goOneLevelDown.bind(this)} onClick={this.goOneLevelDown.bind(this)}>
+                <span className="hover-effect-text m-1 d-inline-block shakeable"  onMouseEnter={this.goOneLevelDown.bind(this)} onClick={this.goOneLevelDown.bind(this)}>
                     er en fullstack-utvikler
 
 
@@ -89,11 +111,11 @@ class HoverTextEffect extends Component {
                         <span style={{display:"none"}}>elsker
                             <span style={{display:"none"}}>digger
                                 <span style={{display:"none"}}>	&lt;3
-                                    <span style={{display:"none"}}>er god i
+                                    <span style={{display:"none"}}>er glad i
                                         <span style={{display:"none"}}>finner glede i
                                             <span style={{display:"none"}}>setter pris på
                                                 <span style={{display:"none"}}>ønsker
-                                                    <span id="last" style={{display:"none"}}>liker
+                                                    <span id="last" style={{display:"none"}}>interessert i
                         </span>
                         </span>
                         </span>
