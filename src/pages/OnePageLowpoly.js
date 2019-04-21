@@ -1,14 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import Carousel from 'react-bootstrap/Carousel';
 
 
-import momentum1 from '../images/lowpoly_canyon.png'
-import momentum2 from '../images/lowpoly_cold.png'
-import momentum3 from '../images/lowpoly_war.png'
-import momentum4 from '../images/lowpoly_cabnin.png'
+import momentum1 from '../images/lowpoly_canyon.webp'
+import momentum2 from '../images/lowpoly_cold.webp'
+import momentum3 from '../images/lowpoly_war.webp'
+import momentum4 from '../images/lowpoly_cabnin.webp'
 
 class OnePageLowpoly extends React.Component {
     constructor(props, context) {
@@ -47,6 +45,9 @@ class OnePageLowpoly extends React.Component {
             finished:false
         });
     }
+
+
+
 
 
     render() {

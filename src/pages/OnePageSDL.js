@@ -1,14 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import Carousel from 'react-bootstrap/Carousel';
 
-
-import momentum1 from '../images/lowpoly_canyon.png'
-import momentum2 from '../images/lowpoly_cold.png'
-import momentum3 from '../images/lowpoly_war.png'
-import momentum4 from '../images/lowpoly_cabnin.png'
 import ReactPlayer from 'react-player'
 
 class OnePageSDL extends React.Component {
@@ -73,8 +66,8 @@ class OnePageSDL extends React.Component {
 
                     <ReactPlayer
                                  url='https://youtu.be/VOfOTikdLXk'
-                                 style={{margin: "0 auto"}} width={361*1.2} height={314*1.2}
-                                 controls={true} volume={0} playing={true} playbackRate={2} loop={true}/>
+                                 style={{margin: "0 auto"}} width={361*1.5} height={314*1.2}
+                                 controls={false} volume={0} playing={true} playbackRate={2} loop={true}/>
 
                     <Carousel.Caption  style={{color:"white", position:"relative", left:"0px"}}>
 
@@ -84,8 +77,8 @@ class OnePageSDL extends React.Component {
                 <Carousel.Item>
                     <ReactPlayer
                         url='https://youtu.be/9KpkOW0hqC8'
-                        style={{margin: "0 auto"}} width={361*1.2} height={314*1.2}
-                        controls={true} volume={0} playing={true} playbackRate={2} loop={true}/>
+                        style={{margin: "0 auto"}} width={361*1.5} height={314*1.2}
+                        controls={false} volume={0} playing={this.state.index === 1} playbackRate={2} loop={true}/>
 
                     <Carousel.Caption  style={{color:"white", position:"relative", left:"0px"}}>
 

@@ -16,8 +16,7 @@ class ImageEffects extends Component {
         window.removeEventListener("scroll", this.onWheel);
     }
 
-    onWheel = (event) => {
-        let wh = window.innerHeight;
+    onWheel = () => {
         let when = this.props.when;
         let whenclose = this.props.whenclose;
         let display = this.state.display;

@@ -34,16 +34,16 @@ class filiptangen extends Component {
         return(
             <div>
 
-            <OpenEffect className="open-effect-slide-left filiptangen" when={0} whenclose={0} alwaysDisplay>
-                <canvas className="" style={{width:"200px",position:"relative", left:"-10px", top:"50vh", transform:"translateY(-220px)"}} id="canvas" ></canvas>
-                <div className="text-left p-3 font-weight-light" style={{fontSize:"14px",width:"175px",position:"fixed",top:"50vh", transform:"translateY(-50%)"}}>
+            <OpenEffect className="m-1 open-effect-slide-left filiptangen" when={0} whenclose={0} alwaysDisplay>
+                <canvas className="" style={{width:"200px",position:"relative", left:"0px", top:"50vh", transform:"translateY(-185px)"}} id="canvas" ></canvas>
+                <div className="p-3 font-weight-light" style={{fontSize:"14px",width:"200px", height:"300px",position:"fixed",top:"50vh", transform:"translateY(-50%)"}}>
                     <p>Bachelor i Informatikk ved NTNU i Trondheim</p>
-                    <p><strong>Alder: </strong>20</p>
-                    <p><strong>Tlf: </strong>91334562</p>
-                    <p className="pb-0 mb-2"> filiptangen1998@live.com</p>
+                    <p>20 år gammel</p>
+                    <p><strong>+47</strong> 91334562</p>
+                    <p> filiptangen1998@live.com</p>
 
 
-                    <Container className="m-0 p-0">
+                    <Container className="m-0 mt-3 p-0">
                         <Row className="justify-content-center m-0 p-0">
 
 
@@ -61,23 +61,26 @@ class filiptangen extends Component {
 
                         </Row>
                     </Container>
-                    <br/>
-                    <div  className="m-2">
-                    <Link  style={{display:"block",width:"48px", margin:"15px auto"}} activeClass="active" to="erfaring" spy={true} smooth={true} offset={0}
-                          duration={1000}>
-                        <button>2019</button>
-                    </Link>
-                    <Link  style={{display:"block",width:"48px", margin:"15px auto"}} activeClass="active" to="2018" spy={true} smooth={true} offset={0}
-                          duration={1000}>
-                        <button>2018</button>
-                    </Link>
-                    <Link  style={{display:"block",width:"61px", margin:"15px auto"}} activeClass="active" to="resten" spy={true} smooth={true} offset={0}
-                          duration={1000}>
-                        <button>Resten</button>
-                    </Link>
+
+
+
+                </div>
+
+                <div>
+                    <div  className="p-3 " style={{position:"relative", top:"65vh",width:"200px"}}>
+                        <Link  style={{display:"block",width:"165px", margin:"20px auto"}} activeClass="active" to="erfaring" spy={true} smooth={true} offset={0}
+                               duration={1000}>
+                            <div className="customButton w-100">2019</div>
+                        </Link>
+                        <Link  style={{display:"block",width:"165px", margin:"20px auto"}} activeClass="active" to="2018" spy={true} smooth={true} offset={0}
+                               duration={1000}>
+                            <div className="customButton w-100">2018</div>
+                        </Link>
+                        <Link  style={{display:"block",width:"165px", margin:"20px auto"}} activeClass="active" to="resten" spy={true} smooth={true} offset={0}
+                               duration={1000}>
+                            <div className="customButton w-100">Resten</div>
+                        </Link>
                     </div>
-
-
                 </div>
             </OpenEffect>
 

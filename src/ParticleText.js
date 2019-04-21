@@ -296,8 +296,8 @@ export function renderText() {
     //let minradius = 6.0;
   /*  let radius = 8;
 */
-  let minradius=5.0;
-  let radius=3.0;
+  let minradius=6.0;
+  let radius=4.0;
 
     var message = new shape(W / 2, H / 2 + 50, fieldvalue);
 
